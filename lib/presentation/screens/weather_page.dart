@@ -60,6 +60,37 @@ String getWeatherAnimation(String? mainCondition){
   }
 }
 
+String getWeatherCondition(String? mainCondition){
+  if(mainCondition == null) return 'cargando...'; //default to 'cargando...'
+
+  switch(mainCondition.toLowerCase()){
+    case 'clouds':
+      return 'Nubes';
+    case 'mist':
+      return 'Neblina';
+    case 'smoke':
+      return 'Humo';
+    case 'haze':
+      return 'brumoso';
+    case 'dust':
+      return 'Polvoso';
+    case 'fog':
+      return 'Niebla';
+    case 'rain':
+      return 'Lluvioso';
+    case 'drizzle':
+      return 'Llovizna';
+    case 'shower rain':
+      return 'Aguacero';
+    case 'thunderstorm':
+      return 'Tormena';
+    case 'clear':
+      return 'Despejado';
+    default:
+      return 'Cargando...';
+  }
+}
+
   //  init state
   @override
   void initState() {
@@ -75,15 +106,15 @@ String getWeatherAnimation(String? mainCondition){
       appBar: AppBar(
         // Toda la configuracion del appbar
         backgroundColor: Colors.blueAccent[200],
-        title: const Text('Feliz Viaje', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w300, color: Colors.white)),
+        title: const Text('Buen Viaje Mamá', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w300, color: Colors.white)),
         centerTitle: true,
         //botones de actions
         actions: [
           IconButton(
             onPressed: (){
-              Navigator.pushNamed(context, '/');
+              _fetchWeather();
             },
-            icon: const Icon(Icons.car_repair), 
+            icon: const Icon(Icons.replay_outlined), 
           ),],
       ),
       backgroundColor: Colors.lightBlue[100],
@@ -91,33 +122,21 @@ String getWeatherAnimation(String? mainCondition){
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children:[
-            //  city name
+            const Text('Ciudad:', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w300)),
+
+            //  nombre de la ciudad
             Text(_weather?.cityName ?? "Cargando ciudad...", style: const TextStyle(fontSize: 32, fontWeight: FontWeight.w400)),
 
-            //  animation
+            //  animacion
             Lottie.asset(getWeatherAnimation(_weather?.mainCondition)),
       
-            //  temperatur
+            //  temperatura
             Text('${_weather?.temperature.round()}°C', style: const TextStyle(fontSize: 28, fontWeight: FontWeight.w300)),
-            const SizedBox(height: 5),
-            //  temperatur condicional
-            Text(_weather?.mainCondition ?? "", style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w300)),
 
-            const SizedBox(height: 10),
-
-            const Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                //  min temp
-                Text('Min: ', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400)),
-                Text('17°C', style: TextStyle(fontSize: 15, fontWeight: FontWeight.w300)),
-                //separacion
-                SizedBox(width: 10),
-                //  max temp
-                Text('Max: ', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400)),
-                Text('34°C', style: TextStyle(fontSize: 15, fontWeight: FontWeight.w300)),
-              ],
-            )
+            //  condicion del clima
+            Text(getWeatherCondition(_weather?.mainCondition), style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w300)),
+            //  descripcion del clima
+            Text(_weather?.detalles ?? 'Cargando descripción...', style: const TextStyle(fontSize: 30, fontWeight: FontWeight.w300)),
           ],
         ),
       ),
