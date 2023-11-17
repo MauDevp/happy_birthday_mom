@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1030988524707",
+    "project_id": "happy-birthday-mama-b05ec",
+    "storage_bucket": "happy-birthday-mama-b05ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030988524707:android:eca6636de34aceca9d2316",
+        "android_client_info": {
+          "package_name": "com.example.happy_birthday_mom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmRBEfL8_Uvg9uiE52IQkvHN3RbisbkP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
