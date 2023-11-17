@@ -1,32 +1,40 @@
+//  importacion
 import 'package:flutter/material.dart';
 import 'package:happy_birthday_mom/presentation/models/weather_models.dart';
-import 'package:happy_birthday_mom/presentation/screens/pronostic_page.dart';
+import 'package:happy_birthday_mom/presentation/models/pronostic_models.dart';
+import 'package:happy_birthday_mom/presentation/screens/weather_page.dart';
 import 'package:happy_birthday_mom/presentation/services/weather_service.dart';
 import 'package:lottie/lottie.dart';
+import 'package:intl/intl.dart';
 
-class WeatherPage extends StatefulWidget {
-  const WeatherPage({super.key});
+//  clase statefulwidget
+class PronosticPage extends StatefulWidget {
+  const PronosticPage({super.key});
+
 
   @override
-  State<WeatherPage> createState() => _WeatherPageState();
+  State<PronosticPage> createState() => _PronosticPageState();
 }
 
-class _WeatherPageState extends State<WeatherPage> {
-
+//  clase state
+class _PronosticPageState extends State<PronosticPage> {
+  
   //  api key
   final _weatherServices = WeatherServices(apiKey: 'ab257ee0c6fdd62eb623c952c014d722');
-  Weather? _weather;
+
+//  importacion
+  HourlyWeather? _hourlyWeather;
 
   //  fetch weather
-  _fetchWeather() async{
+  _fetchWeatherHours() async{
     //  obtener la ubicacion de la ciudad
     String cityName = await _weatherServices.getCurrentCity();
 
     //  obtener el tiempo de la ciudad
     try{
-      final Weather = await _weatherServices.getWeather(cityName);
+      final HourlyWeather = await _weatherServices.getHourlyWeather(cityName);
       setState(() {
-        _weather = Weather;
+        _hourlyWeather = HourlyWeather;
       });
     }
 
@@ -98,63 +106,52 @@ String getWeatherCondition(String? mainCondition){
     super.initState();
 
     //  fetch weather on startup
-    _fetchWeather();
+    _fetchWeatherHours();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // Toda la configuracion del appbar
         backgroundColor: Colors.blueAccent[200],
-        // texto del appbar
-        title: const Text('Buen Viaje Mamá', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w300, color: Colors.white)),
+        title: const Text('Pronóstico del clima', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w300, color: Colors.white)),
         centerTitle: true,
-        //boton para ir a pantalla de pronostico
+        // boton de recarga de la hora
         actions: [
           IconButton(
-            onPressed: (){
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const PronosticPage()),
-              );
-            },
-            icon: const Icon(Icons.next_plan, color: Colors.black54, size: 30,), 
-          ),],
-        //boton de actualizar textos
-        leading: IconButton(
-          onPressed: (){
-            setState(() {
-              _weather = null;
-              _fetchWeather();
+            onPressed: () {
+              setState(() {
+              _hourlyWeather = null;
+              _fetchWeatherHours();
             });
+            },
+            icon: const Icon(Icons.location_on),
+          )
+        ],
+        
+        //boton para ir a la pantalla de weather
+        leading: IconButton(
+          onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const WeatherPage()),
+              );
           },
-          icon: const Icon(Icons.location_on, color: Colors.black54, size: 30,), 
+          icon: const Icon(Icons.arrow_back),
         ),
       ),
-      //  fondo de la pantalla
       backgroundColor: Colors.lightBlue[100],
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children:[
-            //  texto descriptivo
-            const Text('Ciudad:', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w300)),
-
-            //  nombre de la ciudad
-            Text(_weather?.cityName ?? "Cargando ciudad...", style: const TextStyle(fontSize: 32, fontWeight: FontWeight.w400)),
-
-            //  animacion
-            Lottie.asset(getWeatherAnimation(_weather?.mainCondition)),
-      
-            //  temperatura
-            Text('${_weather?.temperature.round()}°C', style: const TextStyle(fontSize: 28, fontWeight: FontWeight.w300)),
-
-            //  condicion del clima
-            Text(getWeatherCondition(_weather?.mainCondition), style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w300)),
-            
-            //  descripcion del clima
-            Text(_weather?.detalles ?? 'Cargando descripción...', style: const TextStyle(fontSize: 30, fontWeight: FontWeight.w300)),
+          children: [
+            //  titulo de la pantalla
+            const Text('Pronóstico del tiempo:', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400)),
+            Lottie.asset(getWeatherAnimation(_hourlyWeather?.condition)),
+            Text(_hourlyWeather?.description ?? 'Cargando...'),
+            Text('${DateFormat('kk:mm').format(_hourlyWeather?.time ?? DateTime.now())}hrs'),
+            Text(getWeatherCondition(_hourlyWeather?.condition)),
+            Text('${_hourlyWeather?.temperature.round()}°C'),
           ],
         ),
       ),

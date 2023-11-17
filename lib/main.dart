@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'package:happy_birthday_mom/presentation/screens/pantallaPrincipal.dart';
+import 'package:happy_birthday_mom/presentation/screens/pronostic_page.dart';
 import 'package:happy_birthday_mom/presentation/screens/weather_Page.dart';
 
 
@@ -19,7 +19,8 @@ class Myapp extends StatelessWidget {
         useMaterial3: true,
         colorSchemeSeed: Colors.cyan
       ),
-      home: const WeatherPage()
+      //home: const WeatherPage()
+      home: const WeatherPage(),
     );
   }
 
