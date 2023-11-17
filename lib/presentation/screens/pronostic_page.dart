@@ -7,6 +7,7 @@ import 'package:happy_birthday_mom/presentation/services/weather_service.dart';
 import 'package:lottie/lottie.dart';
 import 'package:intl/intl.dart';
 import 'package:happy_birthday_mom/presentation/services/pronostic_service.dart';
+import 'package:intl/intl.dart';
 
 //  clase statefulwidget
 class PronosticPage extends StatefulWidget {
@@ -110,7 +111,8 @@ String getWeatherCondition(String? mainCondition){
   }
 
     Future<void> _fetchWeatherHours() async {
-    _hourlyForecast = await fetchHourlyForecast('Mexico');
+    String cityName = await _weatherServices.getCurrentCity();
+    _hourlyForecast = await fetchHourlyForecast(cityName);
     setState(() {});
   }
 
@@ -121,65 +123,35 @@ String getWeatherCondition(String? mainCondition){
         backgroundColor: Colors.blueAccent[200],
         title: const Text('Pronóstico del clima', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w300, color: Colors.white)),
         centerTitle: true,
-        // boton de recarga de la hora
         actions: [
           IconButton(
-            onPressed: () {
-              setState(() {
-              _hourlyWeather = null;
-              _fetchWeatherHours();
-            });
-            },
+            onPressed: _fetchWeatherHours,
             icon: const Icon(Icons.location_on),
           )
         ],
-        
-        //boton para ir a la pantalla de weather
         leading: IconButton(
           onPressed: () {
             Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const WeatherPage()),
-              );
+              context,
+              MaterialPageRoute(builder: (context) => const WeatherPage()),
+            );
           },
           icon: const Icon(Icons.arrow_back),
         ),
       ),
-      backgroundColor: Colors.lightBlue[100],
-      body: Center(
-        child: 
-        Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Padding(
-              padding: EdgeInsets.all(10.0),
-              child: Text('Pronóstico del tiempo:', style: TextStyle(fontSize:25, fontWeight: FontWeight.w400)),
+      body: _hourlyForecast == null
+          ? const Center(child: CircularProgressIndicator())
+          : ListView.builder(
+              itemCount: _hourlyForecast!.length,
+              itemBuilder: (context, index) {
+                final forecast = _hourlyForecast![index];
+                final formattedDate = DateFormat('d MMMM, hh:mm a').format(forecast.time);
+                return ListTile(
+                  title: Text('$formattedDate: ${forecast.description}'),
+                  subtitle: Text('${forecast.temperature.round()}°C'),
+                );
+              },
             ),
-            const Spacer(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                const Spacer(),
-                SizedBox(
-                  width: 70,
-                  height: 70,
-                  child: Lottie.asset(getWeatherAnimation(_hourlyWeather?.condition))
-                  ),
-                const Spacer(), 
-                Text(_hourlyWeather?.description ?? 'Cargando...'),
-                const Spacer(),
-                Text('${DateFormat('kk:mm').format(_hourlyWeather?.time ?? DateTime.now())}hrs'),
-                const Spacer(),
-                Text(getWeatherCondition(_hourlyWeather?.condition)),
-                const Spacer(),
-                Text('${_hourlyWeather?.temperature.round()}°C'),
-                const Spacer(),
-              ],
-            ),
-            const Spacer(),
-          ],
-        ),
-      ),
     );
   }
 }
