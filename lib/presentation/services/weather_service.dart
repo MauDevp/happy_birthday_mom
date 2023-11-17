@@ -3,6 +3,7 @@ import 'package:geocoding/geocoding.dart';
 import 'package:http/http.dart' as http;
 import 'package:geolocator/geolocator.dart';
 import 'package:happy_birthday_mom/presentation/models/weather_models.dart';
+import 'package:happy_birthday_mom/presentation/models/pronostic_models.dart';
 
 class WeatherServices {
 
@@ -17,6 +18,16 @@ class WeatherServices {
     
     if (response.statusCode == 200) {
       return Weather.fromJson(jsonDecode(response.body));
+    } else {
+      throw Exception('Error al cargar el clima');
+    }
+  }
+
+  Future<HourlyWeather> getHourlyWeather(String cityName) async {
+    final response = await http.get(Uri.parse('$BASE_URL?q=$cityName&appid=$apiKey&units=metric&lang=es'));
+    
+    if (response.statusCode == 200) {
+      return HourlyWeather.fromJson(jsonDecode(response.body));
     } else {
       throw Exception('Error al cargar el clima');
     }
