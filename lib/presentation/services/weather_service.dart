@@ -7,6 +7,7 @@ import 'package:happy_birthday_mom/presentation/models/weather_models.dart';
 
 class WeatherServices {
 
+  // ignore: constant_identifier_names
   static const BASE_URL = 'http://api.openweathermap.org/data/2.5/weather';
   final String apiKey;
 

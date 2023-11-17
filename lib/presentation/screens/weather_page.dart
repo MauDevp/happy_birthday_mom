@@ -72,24 +72,52 @@ String getWeatherAnimation(String? mainCondition){
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[200],
+      appBar: AppBar(
+        // Toda la configuracion del appbar
+        backgroundColor: Colors.blueAccent[200],
+        title: const Text('Feliz Viaje', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w300, color: Colors.white)),
+        centerTitle: true,
+        //botones de actions
+        actions: [
+          IconButton(
+            onPressed: (){
+              Navigator.pushNamed(context, '/');
+            },
+            icon: const Icon(Icons.car_repair), 
+          ),],
+      ),
+      backgroundColor: Colors.lightBlue[100],
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children:[
             //  city name
-            Text(_weather?.cityName ?? "Cargando ciudad...", style: const TextStyle(fontSize: 30, fontWeight: FontWeight.w400)),
+            Text(_weather?.cityName ?? "Cargando ciudad...", style: const TextStyle(fontSize: 32, fontWeight: FontWeight.w400)),
 
             //  animation
             Lottie.asset(getWeatherAnimation(_weather?.mainCondition)),
       
             //  temperatur
-            Text('${_weather?.temperature.round()}°C', style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w300)),
-
+            Text('${_weather?.temperature.round()}°C', style: const TextStyle(fontSize: 28, fontWeight: FontWeight.w300)),
+            const SizedBox(height: 5),
             //  temperatur condicional
-            Text(_weather?.mainCondition ?? ""),
-      
-      
+            Text(_weather?.mainCondition ?? "", style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w300)),
+
+            const SizedBox(height: 10),
+
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                //  min temp
+                Text('Min: ', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400)),
+                Text('17°C', style: TextStyle(fontSize: 15, fontWeight: FontWeight.w300)),
+                //separacion
+                SizedBox(width: 10),
+                //  max temp
+                Text('Max: ', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400)),
+                Text('34°C', style: TextStyle(fontSize: 15, fontWeight: FontWeight.w300)),
+              ],
+            )
           ],
         ),
       ),
