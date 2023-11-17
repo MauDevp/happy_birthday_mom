@@ -10,7 +10,7 @@ Future<List<HourlyForecast>> fetchHourlyForecast(String city) async {
     Map<String, dynamic> data = jsonDecode(response.body);
     List<dynamic> hourlyData = data['list'];
 
-    return hourlyData.take(2).map((json) => HourlyForecast.fromJson(json)).toList();
+    return hourlyData.take(4).map((json) => HourlyForecast.fromJson(json)).toList();
   } else {
     throw Exception('Failed to load hourly forecast');
   }
@@ -31,7 +31,7 @@ class HourlyForecast {
     return HourlyForecast(
       time: DateTime.fromMillisecondsSinceEpoch(json['dt'] * 1000),
       description: json['weather'][0]['description'],
-      temperature: json['main']['temp'],
+      temperature: json['main']['temp'] - 273.15,
     );
   }
 }

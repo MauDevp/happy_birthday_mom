@@ -1,10 +1,12 @@
 class HourlyWeather {
+  final String cityName;
   final DateTime time;
   final double temperature;
   final String condition;
   final String description;
 
   HourlyWeather({
+    required this.cityName,
     required this.time,
     required this.temperature,
     required this.condition,
@@ -13,6 +15,7 @@ class HourlyWeather {
 
   factory HourlyWeather.fromJson(Map<String, dynamic> json) {
     return HourlyWeather(
+      cityName: json['name'],
       time: DateTime.fromMillisecondsSinceEpoch(json['dt'] * 1000),
       temperature: json['main']['temp'].toDouble(),
       condition: json['weather'][0]['main'],
