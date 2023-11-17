@@ -6,6 +6,7 @@ import 'package:happy_birthday_mom/presentation/screens/weather_page.dart';
 import 'package:happy_birthday_mom/presentation/services/weather_service.dart';
 import 'package:lottie/lottie.dart';
 import 'package:intl/intl.dart';
+import 'package:happy_birthday_mom/presentation/services/pronostic_service.dart';
 
 //  clase statefulwidget
 class PronosticPage extends StatefulWidget {
@@ -18,6 +19,7 @@ class PronosticPage extends StatefulWidget {
 
 //  clase state
 class _PronosticPageState extends State<PronosticPage> {
+  List<HourlyForecast>? _hourlyForecast;
   
   //  api key
   final _weatherServices = WeatherServices(apiKey: 'ab257ee0c6fdd62eb623c952c014d722');
@@ -26,7 +28,7 @@ class _PronosticPageState extends State<PronosticPage> {
   HourlyWeather? _hourlyWeather;
 
   //  fetch weather
-  _fetchWeatherHours() async{
+  /*_fetchWeatherHours() async{
     //  obtener la ubicacion de la ciudad
     String cityName = await _weatherServices.getCurrentCity();
 
@@ -43,7 +45,7 @@ class _PronosticPageState extends State<PronosticPage> {
       print(e);
     }
   }
-
+*/
   //  weather animations
 String getWeatherAnimation(String? mainCondition){
   if(mainCondition == null) return 'assets/sunny.json'; //default to sunny
@@ -104,9 +106,12 @@ String getWeatherCondition(String? mainCondition){
   @override
   void initState() {
     super.initState();
-
-    //  fetch weather on startup
     _fetchWeatherHours();
+  }
+
+    Future<void> _fetchWeatherHours() async {
+    _hourlyForecast = await fetchHourlyForecast('Mexico');
+    setState(() {});
   }
 
   @override
@@ -142,16 +147,36 @@ String getWeatherCondition(String? mainCondition){
       ),
       backgroundColor: Colors.lightBlue[100],
       body: Center(
-        child: Column(
+        child: 
+        Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            //  titulo de la pantalla
-            const Text('Pronóstico del tiempo:', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400)),
-            Lottie.asset(getWeatherAnimation(_hourlyWeather?.condition)),
-            Text(_hourlyWeather?.description ?? 'Cargando...'),
-            Text('${DateFormat('kk:mm').format(_hourlyWeather?.time ?? DateTime.now())}hrs'),
-            Text(getWeatherCondition(_hourlyWeather?.condition)),
-            Text('${_hourlyWeather?.temperature.round()}°C'),
+            const Padding(
+              padding: EdgeInsets.all(10.0),
+              child: Text('Pronóstico del tiempo:', style: TextStyle(fontSize:25, fontWeight: FontWeight.w400)),
+            ),
+            const Spacer(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                const Spacer(),
+                SizedBox(
+                  width: 70,
+                  height: 70,
+                  child: Lottie.asset(getWeatherAnimation(_hourlyWeather?.condition))
+                  ),
+                const Spacer(), 
+                Text(_hourlyWeather?.description ?? 'Cargando...'),
+                const Spacer(),
+                Text('${DateFormat('kk:mm').format(_hourlyWeather?.time ?? DateTime.now())}hrs'),
+                const Spacer(),
+                Text(getWeatherCondition(_hourlyWeather?.condition)),
+                const Spacer(),
+                Text('${_hourlyWeather?.temperature.round()}°C'),
+                const Spacer(),
+              ],
+            ),
+            const Spacer(),
           ],
         ),
       ),
