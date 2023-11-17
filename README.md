@@ -1,16 +1,16 @@
-# happy_birthday_mom
+# Feliz cumpleaños mamá
 
-A new Flutter project.
+Este es un proyecto de Flutter para crear una aplicación de felicitación de cumpleaños para mamá.
 
-## Getting Started
+## Empezando
 
-This project is a starting point for a Flutter application.
+Este proyecto es un punto de partida para una aplicación de Flutter.
 
-A few resources to get you started if this is your first Flutter project:
+Algunos recursos para comenzar si este es tu primer proyecto de Flutter:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [Laboratorio: Escribe tu primera aplicación de Flutter](https://docs.flutter.dev/get-started/codelab)
+- [Recetario: Ejemplos útiles de Flutter](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Para obtener ayuda para comenzar con el desarrollo de Flutter, consulta la
+[documentación en línea](https://docs.flutter.dev/), que ofrece tutoriales,
+ejemplos, orientación sobre el desarrollo móvil y una referencia completa de la API.
