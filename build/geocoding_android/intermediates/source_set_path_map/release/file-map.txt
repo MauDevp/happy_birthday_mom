@@ -1,0 +1,12 @@
+com.baseflow.geocoding.geocoding_android-jetified-window-1.0.0-beta04-0 C:\Users\Maui\.gradle\caches\transforms-3\3547045148f823ae82ba5f00da62432e\transformed\jetified-window-1.0.0-beta04\res
+com.baseflow.geocoding.geocoding_android-core-1.6.0-1 C:\Users\Maui\.gradle\caches\transforms-3\448e12895481b74f12aa96a40a56e1d8\transformed\core-1.6.0\res
+com.baseflow.geocoding.geocoding_android-jetified-annotation-experimental-1.1.0-2 C:\Users\Maui\.gradle\caches\transforms-3\d5b68f2b2b74dc022302f312e278ba97\transformed\jetified-annotation-experimental-1.1.0\res
+com.baseflow.geocoding.geocoding_android-jetified-window-java-1.0.0-beta04-3 C:\Users\Maui\.gradle\caches\transforms-3\e35e8dc727b74800fd8b576809d7e083\transformed\jetified-window-java-1.0.0-beta04\res
+com.baseflow.geocoding.geocoding_android-main-4 C:\Users\Maui\AppData\Local\Pub\Cache\hosted\pub.dev\geocoding_android-2.1.2\android\src\main\res
+com.baseflow.geocoding.geocoding_android-release-5 C:\Users\Maui\AppData\Local\Pub\Cache\hosted\pub.dev\geocoding_android-2.1.2\android\src\release\res
+com.baseflow.geocoding.geocoding_android-pngs-6 D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\geocoding_android\generated\res\pngs\release
+com.baseflow.geocoding.geocoding_android-resValues-7 D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\geocoding_android\generated\res\resValues\release
+com.baseflow.geocoding.geocoding_android-rs-8 D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\geocoding_android\generated\res\rs\release
+com.baseflow.geocoding.geocoding_android-mergeReleaseResources-9 D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\geocoding_android\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.baseflow.geocoding.geocoding_android-mergeReleaseResources-10 D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\geocoding_android\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.baseflow.geocoding.geocoding_android-merged_res-11 D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\geocoding_android\intermediates\merged_res\release
