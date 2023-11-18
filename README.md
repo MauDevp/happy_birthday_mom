@@ -10,7 +10,7 @@ La aplicación consta de dos pantallas principales:
 2. **Página del Pronóstico del Tiempo**: Esta página muestra el pronóstico del tiempo actual.
 
 ## Descarga
-Puedes descargar la aplicación desde [aquí](URL_DE_DESCARGA).
+Puedes descargar la aplicación desde [aquí](https://github.com/BlackShadow12675/happy_birthday_mom/raw/features/build/app/outputs/flutter-apk/app-debug.apk).
 
 ## Tecnologías utilizadas
 
