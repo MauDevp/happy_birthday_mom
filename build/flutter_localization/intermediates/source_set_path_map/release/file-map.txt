@@ -1,0 +1,12 @@
+com.mastertipsy.flutter_localization-jetified-window-1.0.0-beta04-0 C:\Users\Maui\.gradle\caches\transforms-3\3547045148f823ae82ba5f00da62432e\transformed\jetified-window-1.0.0-beta04\res
+com.mastertipsy.flutter_localization-core-1.6.0-1 C:\Users\Maui\.gradle\caches\transforms-3\448e12895481b74f12aa96a40a56e1d8\transformed\core-1.6.0\res
+com.mastertipsy.flutter_localization-jetified-annotation-experimental-1.1.0-2 C:\Users\Maui\.gradle\caches\transforms-3\d5b68f2b2b74dc022302f312e278ba97\transformed\jetified-annotation-experimental-1.1.0\res
+com.mastertipsy.flutter_localization-jetified-window-java-1.0.0-beta04-3 C:\Users\Maui\.gradle\caches\transforms-3\e35e8dc727b74800fd8b576809d7e083\transformed\jetified-window-java-1.0.0-beta04\res
+com.mastertipsy.flutter_localization-main-4 C:\Users\Maui\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_localization-0.1.14\android\src\main\res
+com.mastertipsy.flutter_localization-release-5 C:\Users\Maui\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_localization-0.1.14\android\src\release\res
+com.mastertipsy.flutter_localization-pngs-6 D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\flutter_localization\generated\res\pngs\release
+com.mastertipsy.flutter_localization-resValues-7 D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\flutter_localization\generated\res\resValues\release
+com.mastertipsy.flutter_localization-rs-8 D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\flutter_localization\generated\res\rs\release
+com.mastertipsy.flutter_localization-mergeReleaseResources-9 D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\flutter_localization\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.mastertipsy.flutter_localization-mergeReleaseResources-10 D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\flutter_localization\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.mastertipsy.flutter_localization-merged_res-11 D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\flutter_localization\intermediates\merged_res\release

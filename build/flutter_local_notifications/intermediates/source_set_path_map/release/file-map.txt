@@ -1,0 +1,13 @@
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-jetified-window-1.0.0-beta04-0 C:\Users\Maui\.gradle\caches\transforms-3\3547045148f823ae82ba5f00da62432e\transformed\jetified-window-1.0.0-beta04\res
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-core-1.6.0-1 C:\Users\Maui\.gradle\caches\transforms-3\448e12895481b74f12aa96a40a56e1d8\transformed\core-1.6.0\res
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-media-1.1.0-2 C:\Users\Maui\.gradle\caches\transforms-3\b03c827dff6d7872b6fc7028336e0af1\transformed\media-1.1.0\res
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-jetified-annotation-experimental-1.1.0-3 C:\Users\Maui\.gradle\caches\transforms-3\d5b68f2b2b74dc022302f312e278ba97\transformed\jetified-annotation-experimental-1.1.0\res
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-jetified-window-java-1.0.0-beta04-4 C:\Users\Maui\.gradle\caches\transforms-3\e35e8dc727b74800fd8b576809d7e083\transformed\jetified-window-java-1.0.0-beta04\res
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-main-5 C:\Users\Maui\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_local_notifications-16.1.0\android\src\main\res
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-release-6 C:\Users\Maui\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_local_notifications-16.1.0\android\src\release\res
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-pngs-7 D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\flutter_local_notifications\generated\res\pngs\release
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-resValues-8 D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\flutter_local_notifications\generated\res\resValues\release
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-rs-9 D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\flutter_local_notifications\generated\res\rs\release
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-mergeReleaseResources-10 D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\flutter_local_notifications\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-mergeReleaseResources-11 D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\flutter_local_notifications\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-merged_res-12 D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\flutter_local_notifications\intermediates\merged_res\release
