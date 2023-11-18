@@ -27,48 +27,51 @@ class _PronosticPageState extends State<PronosticPage> {
 
 //  importacion
   HourlyWeather? _hourlyWeather;
+  Weather? _weather;
 
   //  fetch weather
-  /*_fetchWeatherHours() async{
+_fetchWeatherCity() async{
     //  obtener la ubicacion de la ciudad
     String cityName = await _weatherServices.getCurrentCity();
 
     //  obtener el tiempo de la ciudad
-    try{
-      final HourlyWeather = await _weatherServices.getHourlyWeather(cityName);
-      setState(() {
-        _hourlyWeather = HourlyWeather;
-      });
-    }
+    Weather weather = await _weatherServices.getWeather(cityName);
 
-    //  any errors
-    catch (e){
-      print(e);
-    }
-  }
-*/
+    setState(() {
+        _weather = weather;
+    });
+}
+
   //  weather animations
-String getWeatherAnimation(String? mainCondition){
-  if(mainCondition == null) return 'assets/sunny.json'; //default to sunny
+String getWeatherAnimation(String? mainCondition, DateTime time){
+  if(mainCondition == null) return 'assets/day/charging.json'; //default to sunny
+
+      // Obtén la hora actual
+  final hour = time.hour;
+
+  // Determina si es de día o de noche
+  final isDayTime = hour > 6 && hour < 19;
 
   switch(mainCondition.toLowerCase()){
     case 'clouds':
+      return isDayTime ? 'assets/day/clouds.json' : 'assets/night/cloud.json';
     case 'mist':
+      return isDayTime ? 'assets/day/clouds.json' : 'assets/night/cloud.json';
     case 'smoke':
+      return isDayTime ? 'assets/day/sunny.json' : 'assets/night/moon.json';
     case 'haze':
+      return isDayTime ? 'assets/day/sunny.json' : 'assets/night/moon.json';
     case 'dust':
+      return isDayTime ? 'assets/day/sunny.json' : 'assets/night/moon.json';
     case 'fog':
-      return 'assets/cloud.json';
+      return isDayTime ? 'assets/day/cloud.json' : 'assets/night/cloud.json';
     case 'rain':
+      return isDayTime ? 'assets/day/rain.json' : 'assets/night/rain.json';
     case 'drizzle':
-    case 'shower rain':
-      return 'assets/rain.json';
-    case 'thunderstorm':
-      return 'assets/thunderstorm.json';
-    case 'clear':
-      return 'assets/sunny.json';
+      return isDayTime ? 'assets/day/rain.json' : 'assets/night/rain.json';
+    // Añade más condiciones climáticas aquí...
     default:
-      return 'assets/sunny.json';
+      return isDayTime ? 'assets/day/sunny.json' : 'assets/night/moon.json';
   }
 }
 
@@ -108,6 +111,7 @@ String getWeatherCondition(String? mainCondition){
   void initState() {
     super.initState();
     _fetchWeatherHours();
+    _fetchWeatherCity();
   }
 
     Future<void> _fetchWeatherHours() async {
@@ -120,12 +124,15 @@ String getWeatherCondition(String? mainCondition){
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blueAccent[200],
-        title: const Text('Pronóstico del clima', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w300, color: Colors.white)),
+        backgroundColor: Colors.purple[300],
+        title: const Text('Eres la mejor', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w300, color: Colors.white)),
         centerTitle: true,
         actions: [
           IconButton(
-            onPressed: _fetchWeatherHours,
+            onPressed: () async{
+              await _fetchWeatherCity();
+              await _fetchWeatherHours();
+            },
             icon: const Icon(Icons.location_on),
           )
         ],
@@ -136,22 +143,64 @@ String getWeatherCondition(String? mainCondition){
               MaterialPageRoute(builder: (context) => const WeatherPage()),
             );
           },
-          icon: const Icon(Icons.arrow_back),
+          icon: const Icon(Icons.navigate_before_rounded, color: Colors.black54, size: 30,),
         ),
       ),
-      body: _hourlyForecast == null
+      backgroundColor: Colors.lightBlue[100],
+      body:_hourlyForecast == null
           ? const Center(child: CircularProgressIndicator())
-          : ListView.builder(
-              itemCount: _hourlyForecast!.length,
-              itemBuilder: (context, index) {
-                final forecast = _hourlyForecast![index];
-                final formattedDate = DateFormat('d MMMM, hh:mm a').format(forecast.time);
-                return ListTile(
-                  title: Text('$formattedDate: ${forecast.description}'),
-                  subtitle: Text('${forecast.temperature.round()}°C'),
-                );
-              },
-            ),
+          : Column(
+            children: [
+              const SizedBox(height: 10,),
+              const Text('Pronostico del clima:', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400),),
+              Text(_weather?.cityName ?? 'Cargando...', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400)),
+              
+              Expanded(
+                child: ListView.builder(
+                  itemCount: _hourlyForecast!.length,
+                  itemBuilder: (context, index) {
+                    final forecast = _hourlyForecast![index];
+                    final formattedDate = DateFormat('E d MMM').format(forecast.time);
+                    final formattedTime = DateFormat('hh:mm a').format(forecast.time);
+                    
+                    return ListTile(
+                      title: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            //  row de animation y del DataTime
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                SizedBox(
+                                  width: 90,
+                                  height: 90,
+                                  child: Lottie.asset(getWeatherAnimation(forecast.condition, forecast.time )),
+                                ),
+                                Text('${formattedDate} \n ${formattedTime}', style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w400)),
+                              ],
+                            ),
+                            const SizedBox(height: 20,),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                const Text('(', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400)),
+                                Text('${forecast.temperature.round()}°C', style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w500)),
+                                Text(') - ${getWeatherCondition(forecast.condition)} ', style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w400)),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    );
+                  },
+                ),
+                )
+            ],
+          ),
     );
   }
 }
