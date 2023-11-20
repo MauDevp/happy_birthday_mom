@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.happy_birthday_mom.app-mergeReleaseResources-17:/values-fa/values-fa.xml",
+            "outputFile": "com.example.happy_birthday_mom.app-mergeReleaseResources-21:/values-fa/values-fa.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Maui\\.gradle\\caches\\transforms-3\\45b55c87021c9ab508d82f4ad609d95c\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-fa\\values.xml",
