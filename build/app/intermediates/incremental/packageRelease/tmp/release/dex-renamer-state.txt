@@ -1,4 +1,4 @@
-#Fri Nov 17 23:08:28 CST 2023
+#Sun Nov 19 23:10:46 CST 2023
 base.0=D\:\\Apps_dedicadas\\mom_happy_birthday_41\\happy_birthday_mom\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

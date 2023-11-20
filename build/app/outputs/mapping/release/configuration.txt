@@ -136,6 +136,9 @@
 -keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver { <init>(); }
 -keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService { <init>(); }
 -keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementJobService { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }
 -keep class com.google.firebase.components.ComponentDiscoveryService { <init>(); }
 -keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(); }
 -keep class com.google.firebase.messaging.FirebaseMessagingService { <init>(); }
@@ -146,12 +149,47 @@
 -keep class io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService { <init>(); }
 
 # End of content from D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\app\intermediates\aapt_proguard_file\release\aapt_rules.txt
-# The proguard configuration file for the following section is C:\Users\Maui\.gradle\caches\transforms-3\c5dc4189ad24574cf37af0c0c4872833\transformed\jetified-firebase-common-20.4.2\proguard.txt
--dontwarn com.google.firebase.platforminfo.KotlinDetector
+# The proguard configuration file for the following section is C:\Users\Maui\.gradle\caches\transforms-3\9410f9d71a17df04fcb4572b44bd548c\transformed\jetified-play-services-measurement-api-21.5.0\proguard.txt
+# Can be removed once we pull in a dependency on firebase-common that includes
+# https://github.com/firebase/firebase-android-sdk/pull/1472/commits/856f1ca1151cdd88679bbc778892f23dfa34fc06#diff-a2ed34b5a38b4c6c686b09e54865eb48
 -dontwarn com.google.auto.value.AutoValue
 -dontwarn com.google.auto.value.AutoValue$Builder
 
-# End of content from C:\Users\Maui\.gradle\caches\transforms-3\c5dc4189ad24574cf37af0c0c4872833\transformed\jetified-firebase-common-20.4.2\proguard.txt
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzix {
+  <fields>;
+}
+
+# End of content from C:\Users\Maui\.gradle\caches\transforms-3\9410f9d71a17df04fcb4572b44bd548c\transformed\jetified-play-services-measurement-api-21.5.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Maui\.gradle\caches\transforms-3\0427c3da52ef93b7135716c74d9b7716\transformed\jetified-play-services-measurement-21.5.0\proguard.txt
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzix {
+  <fields>;
+}
+
+# End of content from C:\Users\Maui\.gradle\caches\transforms-3\0427c3da52ef93b7135716c74d9b7716\transformed\jetified-play-services-measurement-21.5.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Maui\.gradle\caches\transforms-3\c06712ad1a6610c6bd74c3e7818828e7\transformed\jetified-play-services-measurement-sdk-21.5.0\proguard.txt
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzix {
+  <fields>;
+}
+
+# End of content from C:\Users\Maui\.gradle\caches\transforms-3\c06712ad1a6610c6bd74c3e7818828e7\transformed\jetified-play-services-measurement-sdk-21.5.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Maui\.gradle\caches\transforms-3\ef1d48e6d3a40ca4249971c0ac10df6c\transformed\jetified-play-services-measurement-impl-21.5.0\proguard.txt
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzix {
+  <fields>;
+}
+
+# End of content from C:\Users\Maui\.gradle\caches\transforms-3\ef1d48e6d3a40ca4249971c0ac10df6c\transformed\jetified-play-services-measurement-impl-21.5.0\proguard.txt
 # The proguard configuration file for the following section is C:\Users\Maui\.gradle\caches\transforms-3\3547045148f823ae82ba5f00da62432e\transformed\jetified-window-1.0.0-beta04\proguard.txt
 # Copyright (C) 2020 The Android Open Source Project
 #
@@ -186,7 +224,7 @@
 
 
 # End of content from C:\Users\Maui\.gradle\caches\transforms-3\3547045148f823ae82ba5f00da62432e\transformed\jetified-window-1.0.0-beta04\proguard.txt
-# The proguard configuration file for the following section is C:\Users\Maui\.gradle\caches\transforms-3\a5806e0b61f330fd0d12048bd4e5e2f8\transformed\rules\lib\META-INF\com.android.tools\r8-from-1.6.0\coroutines.pro
+# The proguard configuration file for the following section is C:\Users\Maui\.gradle\caches\transforms-3\1097eed2e97fa4135e739347ede83629\transformed\rules\lib\META-INF\com.android.tools\r8-from-1.6.0\coroutines.pro
 # Allow R8 to optimize away the FastServiceLoader.
 # Together with ServiceLoader optimization in R8
 # this results in direct instantiation when loading Dispatchers.Main
@@ -210,8 +248,14 @@
     boolean getRECOVER_STACK_TRACES() return false;
 }
 
-# End of content from C:\Users\Maui\.gradle\caches\transforms-3\a5806e0b61f330fd0d12048bd4e5e2f8\transformed\rules\lib\META-INF\com.android.tools\r8-from-1.6.0\coroutines.pro
-# The proguard configuration file for the following section is C:\Users\Maui\.gradle\caches\transforms-3\01aa76231395041f12e4306521413519\transformed\rules\lib\META-INF\com.android.tools\r8\coroutines.pro
+# End of content from C:\Users\Maui\.gradle\caches\transforms-3\1097eed2e97fa4135e739347ede83629\transformed\rules\lib\META-INF\com.android.tools\r8-from-1.6.0\coroutines.pro
+# The proguard configuration file for the following section is C:\Users\Maui\.gradle\caches\transforms-3\c5dc4189ad24574cf37af0c0c4872833\transformed\jetified-firebase-common-20.4.2\proguard.txt
+-dontwarn com.google.firebase.platforminfo.KotlinDetector
+-dontwarn com.google.auto.value.AutoValue
+-dontwarn com.google.auto.value.AutoValue$Builder
+
+# End of content from C:\Users\Maui\.gradle\caches\transforms-3\c5dc4189ad24574cf37af0c0c4872833\transformed\jetified-firebase-common-20.4.2\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Maui\.gradle\caches\transforms-3\2db42d6be3bb08c91462081750f02b2a\transformed\rules\lib\META-INF\com.android.tools\r8\coroutines.pro
 # When editing this file, update the following files as well:
 # - META-INF/proguard/coroutines.pro
 # - META-INF/com.android.tools/proguard/coroutines.pro
@@ -239,7 +283,7 @@
 
 # An annotation used for build tooling, won't be directly accessed.
 -dontwarn org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
-# End of content from C:\Users\Maui\.gradle\caches\transforms-3\01aa76231395041f12e4306521413519\transformed\rules\lib\META-INF\com.android.tools\r8\coroutines.pro
+# End of content from C:\Users\Maui\.gradle\caches\transforms-3\2db42d6be3bb08c91462081750f02b2a\transformed\rules\lib\META-INF\com.android.tools\r8\coroutines.pro
 # The proguard configuration file for the following section is C:\Users\Maui\.gradle\caches\transforms-3\b03c827dff6d7872b6fc7028336e0af1\transformed\media-1.1.0\proguard.txt
 # Copyright (C) 2017 The Android Open Source Project
 #
@@ -278,6 +322,24 @@
 
 
 # End of content from C:\Users\Maui\.gradle\caches\transforms-3\3ec39a0b07fc99059bd5880f8b36994c\transformed\jetified-play-services-tasks-18.0.2\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Maui\.gradle\caches\transforms-3\bec90b1f8072097e08d209115c4558ab\transformed\jetified-play-services-measurement-sdk-api-21.5.0\proguard.txt
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzix {
+  <fields>;
+}
+
+# End of content from C:\Users\Maui\.gradle\caches\transforms-3\bec90b1f8072097e08d209115c4558ab\transformed\jetified-play-services-measurement-sdk-api-21.5.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Maui\.gradle\caches\transforms-3\24e486bd7d5e67601c78c961abac04d1\transformed\jetified-play-services-measurement-base-21.5.0\proguard.txt
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzix {
+  <fields>;
+}
+
+# End of content from C:\Users\Maui\.gradle\caches\transforms-3\24e486bd7d5e67601c78c961abac04d1\transformed\jetified-play-services-measurement-base-21.5.0\proguard.txt
 # The proguard configuration file for the following section is C:\Users\Maui\.gradle\caches\transforms-3\45b55c87021c9ab508d82f4ad609d95c\transformed\jetified-play-services-basement-18.1.0\proguard.txt
 # Needed when building against pre-Marshmallow SDK.
 -dontwarn android.security.NetworkSecurityPolicy

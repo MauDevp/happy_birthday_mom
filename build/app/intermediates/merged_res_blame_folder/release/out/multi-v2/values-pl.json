@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.happy_birthday_mom.app-mergeReleaseResources-17:/values-pl/values-pl.xml",
+            "outputFile": "com.example.happy_birthday_mom.app-mergeReleaseResources-21:/values-pl/values-pl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Maui\\.gradle\\caches\\transforms-3\\9db9fbf2cbbe5ae224d9399ca94dfcb5\\transformed\\core-1.9.0\\res\\values-pl\\values-pl.xml",

@@ -1,12 +1,15 @@
 <dependencies>
   <compile
-      roots="__local_aars__:D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\app\intermediates\flutter\release\libs.jar:unspecified@jar,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:shared_preferences_android::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:firebase_messaging::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:firebase_core::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:geolocator_android::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:flutter_localization::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:geocoding_android::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:flutter_local_notifications::release,io.flutter:flutter_embedding_release:1.0.0-cdbeda788a293fa29665dc3fa3d6e63bd221cb0d@jar,androidx.window:window-java:1.0.0-beta04@aar,androidx.window:window:1.0.0-beta04@aar,org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4@jar,org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.10@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10@jar,io.flutter:armeabi_v7a_release:1.0.0-cdbeda788a293fa29665dc3fa3d6e63bd221cb0d@jar,io.flutter:arm64_v8a_release:1.0.0-cdbeda788a293fa29665dc3fa3d6e63bd221cb0d@jar,io.flutter:x86_64_release:1.0.0-cdbeda788a293fa29665dc3fa3d6e63bd221cb0d@jar,androidx.lifecycle:lifecycle-common-java8:2.2.0@jar,androidx.fragment:fragment:1.1.0@aar,androidx.viewpager:viewpager:1.0.0@aar,androidx.loader:loader:1.0.0@aar,androidx.activity:activity:1.0.0@aar,androidx.customview:customview:1.0.0@aar,androidx.core:core:1.9.0@aar,androidx.core:core:1.9.0@aar,androidx.lifecycle:lifecycle-runtime:2.3.1@aar,androidx.lifecycle:lifecycle-runtime:2.3.1@aar,androidx.savedstate:savedstate:1.0.0@aar,androidx.lifecycle:lifecycle-livedata:2.0.0@aar,androidx.lifecycle:lifecycle-livedata-core:2.0.0@aar,androidx.lifecycle:lifecycle-common:2.3.1@jar,androidx.arch.core:core-runtime:2.1.0@aar,androidx.arch.core:core-common:2.1.0@jar,androidx.versionedparcelable:versionedparcelable:1.1.1@aar,androidx.collection:collection:1.1.0@jar,androidx.lifecycle:lifecycle-viewmodel:2.1.0@aar,androidx.annotation:annotation-jvm:1.7.0@jar,androidx.annotation:annotation-experimental:1.3.0@aar,org.jetbrains.kotlin:kotlin-stdlib:1.7.10@jar,org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10@jar,org.jetbrains:annotations:13.0@jar,androidx.tracing:tracing:1.0.0@aar">
+      roots="__local_aars__:D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\app\intermediates\flutter\release\libs.jar:unspecified@jar,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:shared_preferences_android::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:firebase_analytics::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:firebase_messaging::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:firebase_core::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:geolocator_android::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:flutter_localization::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:geocoding_android::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:flutter_local_notifications::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:google_api_availability_android::release,io.flutter:flutter_embedding_release:1.0.0-cdbeda788a293fa29665dc3fa3d6e63bd221cb0d@jar,androidx.window:window-java:1.0.0-beta04@aar,androidx.window:window:1.0.0-beta04@aar,org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1@jar,org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.1@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.20@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.20@jar,io.flutter:armeabi_v7a_release:1.0.0-cdbeda788a293fa29665dc3fa3d6e63bd221cb0d@jar,io.flutter:arm64_v8a_release:1.0.0-cdbeda788a293fa29665dc3fa3d6e63bd221cb0d@jar,io.flutter:x86_64_release:1.0.0-cdbeda788a293fa29665dc3fa3d6e63bd221cb0d@jar,androidx.lifecycle:lifecycle-common-java8:2.2.0@jar,androidx.fragment:fragment:1.1.0@aar,androidx.viewpager:viewpager:1.0.0@aar,androidx.loader:loader:1.0.0@aar,androidx.activity:activity:1.0.0@aar,androidx.customview:customview:1.0.0@aar,androidx.core:core:1.9.0@aar,androidx.core:core:1.9.0@aar,androidx.lifecycle:lifecycle-runtime:2.3.1@aar,androidx.lifecycle:lifecycle-runtime:2.3.1@aar,androidx.savedstate:savedstate:1.0.0@aar,androidx.lifecycle:lifecycle-livedata:2.0.0@aar,androidx.lifecycle:lifecycle-livedata-core:2.0.0@aar,androidx.lifecycle:lifecycle-common:2.3.1@jar,androidx.arch.core:core-runtime:2.1.0@aar,androidx.arch.core:core-common:2.1.0@jar,androidx.versionedparcelable:versionedparcelable:1.1.1@aar,androidx.collection:collection:1.1.0@jar,androidx.lifecycle:lifecycle-viewmodel:2.1.0@aar,androidx.annotation:annotation-jvm:1.7.0@jar,androidx.annotation:annotation-experimental:1.3.0@aar,org.jetbrains.kotlin:kotlin-stdlib:1.8.21@jar,org.jetbrains.kotlin:kotlin-stdlib-common:1.8.21@jar,org.jetbrains:annotations:23.0.0@jar,androidx.tracing:tracing:1.0.0@aar">
     <dependency
         name="__local_aars__:D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\app\intermediates\flutter\release\libs.jar:unspecified@jar"
         simpleName="__local_aars__:D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\app\intermediates\flutter\release\libs.jar"/>
     <dependency
         name="D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:shared_preferences_android::release"
         simpleName="io.flutter.plugins.sharedpreferences:shared_preferences_android"/>
+    <dependency
+        name="D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:firebase_analytics::release"
+        simpleName="io.flutter.plugins.firebase.analytics:firebase_analytics"/>
     <dependency
         name="D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:firebase_messaging::release"
         simpleName="io.flutter.plugins.firebasemessaging:firebase_messaging"/>
@@ -26,6 +29,9 @@
         name="D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:flutter_local_notifications::release"
         simpleName="com.dexterous.flutterlocalnotifications:flutter_local_notifications"/>
     <dependency
+        name="D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:google_api_availability_android::release"
+        simpleName="com.baseflow.googleapiavailability:google_api_availability_android"/>
+    <dependency
         name="io.flutter:flutter_embedding_release:1.0.0-cdbeda788a293fa29665dc3fa3d6e63bd221cb0d@jar"
         simpleName="io.flutter:flutter_embedding_release"/>
     <dependency
@@ -35,16 +41,16 @@
         name="androidx.window:window:1.0.0-beta04@aar"
         simpleName="androidx.window:window"/>
     <dependency
-        name="org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4@jar"
+        name="org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1@jar"
         simpleName="org.jetbrains.kotlinx:kotlinx-coroutines-android"/>
     <dependency
-        name="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4@jar"
+        name="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.1@jar"
         simpleName="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm"/>
     <dependency
-        name="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.10@jar"
+        name="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.20@jar"
         simpleName="org.jetbrains.kotlin:kotlin-stdlib-jdk8"/>
     <dependency
-        name="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10@jar"
+        name="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.20@jar"
         simpleName="org.jetbrains.kotlin:kotlin-stdlib-jdk7"/>
     <dependency
         name="io.flutter:armeabi_v7a_release:1.0.0-cdbeda788a293fa29665dc3fa3d6e63bd221cb0d@jar"
@@ -113,26 +119,29 @@
         name="androidx.annotation:annotation-experimental:1.3.0@aar"
         simpleName="androidx.annotation:annotation-experimental"/>
     <dependency
-        name="org.jetbrains.kotlin:kotlin-stdlib:1.7.10@jar"
+        name="org.jetbrains.kotlin:kotlin-stdlib:1.8.21@jar"
         simpleName="org.jetbrains.kotlin:kotlin-stdlib"/>
     <dependency
-        name="org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10@jar"
+        name="org.jetbrains.kotlin:kotlin-stdlib-common:1.8.21@jar"
         simpleName="org.jetbrains.kotlin:kotlin-stdlib-common"/>
     <dependency
-        name="org.jetbrains:annotations:13.0@jar"
+        name="org.jetbrains:annotations:23.0.0@jar"
         simpleName="org.jetbrains:annotations"/>
     <dependency
         name="androidx.tracing:tracing:1.0.0@aar"
         simpleName="androidx.tracing:tracing"/>
   </compile>
   <package
-      roots="__local_aars__:D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\app\intermediates\flutter\release\libs.jar:unspecified@jar,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:shared_preferences_android::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:firebase_messaging::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:firebase_core::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:geolocator_android::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:flutter_localization::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:geocoding_android::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:flutter_local_notifications::release,com.google.firebase:firebase-messaging:23.3.1@aar,com.google.firebase:firebase-iid:21.1.0@aar,com.google.firebase:firebase-installations:17.2.0@aar,com.google.firebase:firebase-common-ktx:20.4.2@aar,com.google.firebase:firebase-common:20.4.2@aar,io.flutter:flutter_embedding_release:1.0.0-cdbeda788a293fa29665dc3fa3d6e63bd221cb0d@jar,androidx.window:window-java:1.0.0-beta04@aar,androidx.window:window:1.0.0-beta04@aar,org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4@jar,org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4@jar,org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.4@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.10@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10@jar,io.flutter:armeabi_v7a_release:1.0.0-cdbeda788a293fa29665dc3fa3d6e63bd221cb0d@jar,io.flutter:arm64_v8a_release:1.0.0-cdbeda788a293fa29665dc3fa3d6e63bd221cb0d@jar,io.flutter:x86_64_release:1.0.0-cdbeda788a293fa29665dc3fa3d6e63bd221cb0d@jar,androidx.media:media:1.1.0@aar,com.google.android.gms:play-services-location:21.0.1@aar,com.google.android.gms:play-services-base:18.1.0@aar,com.google.firebase:firebase-iid-interop:17.1.0@aar,com.google.android.gms:play-services-cloud-messaging:17.0.1@aar,com.google.firebase:firebase-installations-interop:17.1.1@aar,com.google.android.gms:play-services-tasks:18.0.2@aar,com.google.android.gms:play-services-stats:17.0.2@aar,com.google.firebase:firebase-measurement-connector:19.0.0@aar,com.google.android.gms:play-services-basement:18.1.0@aar,androidx.fragment:fragment:1.1.0@aar,androidx.legacy:legacy-support-core-utils:1.0.0@aar,androidx.viewpager:viewpager:1.0.0@aar,androidx.loader:loader:1.0.0@aar,androidx.activity:activity:1.0.0@aar,androidx.customview:customview:1.0.0@aar,androidx.core:core:1.9.0@aar,androidx.core:core:1.9.0@aar,androidx.localbroadcastmanager:localbroadcastmanager:1.1.0@aar,androidx.localbroadcastmanager:localbroadcastmanager:1.1.0@aar,androidx.lifecycle:lifecycle-common-java8:2.2.0@jar,androidx.tracing:tracing:1.0.0@aar,androidx.lifecycle:lifecycle-runtime:2.3.1@aar,androidx.lifecycle:lifecycle-runtime:2.3.1@aar,androidx.versionedparcelable:versionedparcelable:1.1.1@aar,androidx.collection:collection:1.1.0@jar,com.google.firebase:firebase-datatransport:18.1.7@aar,com.google.android.datatransport:transport-backend-cct:3.1.8@aar,com.google.android.datatransport:transport-runtime:3.1.8@aar,com.google.firebase:firebase-encoders-proto:16.0.0@jar,com.google.android.datatransport:transport-api:3.0.0@aar,com.google.firebase:firebase-encoders-json:18.0.0@aar,com.google.firebase:firebase-encoders:17.0.0@jar,com.google.firebase:firebase-components:17.1.5@aar,androidx.concurrent:concurrent-futures:1.1.0@jar,androidx.savedstate:savedstate:1.0.0@aar,androidx.lifecycle:lifecycle-livedata:2.0.0@aar,androidx.lifecycle:lifecycle-livedata-core:2.0.0@aar,androidx.lifecycle:lifecycle-common:2.3.1@jar,androidx.arch.core:core-runtime:2.1.0@aar,androidx.arch.core:core-common:2.1.0@jar,androidx.documentfile:documentfile:1.0.0@aar,androidx.print:print:1.0.0@aar,androidx.lifecycle:lifecycle-viewmodel:2.1.0@aar,com.google.code.gson:gson:2.8.9@jar,androidx.annotation:annotation-jvm:1.7.0@jar,androidx.annotation:annotation-experimental:1.3.0@aar,org.jetbrains.kotlin:kotlin-stdlib:1.7.10@jar,org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10@jar,org.jetbrains:annotations:13.0@jar,com.google.errorprone:error_prone_annotations:2.9.0@jar,com.google.firebase:firebase-annotations:16.2.0@jar,javax.inject:javax.inject:1@jar,com.google.guava:listenablefuture:1.0@jar">
+      roots="__local_aars__:D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\app\intermediates\flutter\release\libs.jar:unspecified@jar,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:shared_preferences_android::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:firebase_analytics::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:firebase_messaging::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:firebase_core::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:geolocator_android::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:flutter_localization::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:geocoding_android::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:flutter_local_notifications::release,D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:google_api_availability_android::release,com.google.firebase:firebase-analytics:21.5.0@aar,com.google.android.gms:play-services-measurement-api:21.5.0@aar,com.google.firebase:firebase-messaging:23.3.1@aar,com.google.firebase:firebase-iid:21.1.0@aar,com.google.firebase:firebase-installations:17.2.0@aar,com.google.firebase:firebase-common-ktx:20.4.2@aar,io.flutter:flutter_embedding_release:1.0.0-cdbeda788a293fa29665dc3fa3d6e63bd221cb0d@jar,androidx.window:window-java:1.0.0-beta04@aar,com.google.android.gms:play-services-measurement:21.5.0@aar,com.google.android.gms:play-services-measurement-sdk:21.5.0@aar,com.google.android.gms:play-services-measurement-impl:21.5.0@aar,androidx.privacysandbox.ads:ads-adservices-java:1.0.0-beta05@aar,androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05@aar,androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05@aar,androidx.window:window:1.0.0-beta04@aar,org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1@jar,com.google.firebase:firebase-common:20.4.2@aar,org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.1@jar,org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.1@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.20@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.20@jar,io.flutter:armeabi_v7a_release:1.0.0-cdbeda788a293fa29665dc3fa3d6e63bd221cb0d@jar,io.flutter:arm64_v8a_release:1.0.0-cdbeda788a293fa29665dc3fa3d6e63bd221cb0d@jar,io.flutter:x86_64_release:1.0.0-cdbeda788a293fa29665dc3fa3d6e63bd221cb0d@jar,androidx.media:media:1.1.0@aar,com.google.android.gms:play-services-location:21.0.1@aar,com.google.android.gms:play-services-base:18.1.0@aar,com.google.firebase:firebase-iid-interop:17.1.0@aar,com.google.android.gms:play-services-cloud-messaging:17.0.1@aar,com.google.firebase:firebase-installations-interop:17.1.1@aar,com.google.android.gms:play-services-tasks:18.0.2@aar,com.google.android.gms:play-services-stats:17.0.2@aar,com.google.firebase:firebase-measurement-connector:19.0.0@aar,com.google.android.gms:play-services-ads-identifier:18.0.0@aar,com.google.android.gms:play-services-measurement-sdk-api:21.5.0@aar,com.google.android.gms:play-services-measurement-base:21.5.0@aar,com.google.android.gms:play-services-basement:18.1.0@aar,androidx.fragment:fragment:1.1.0@aar,androidx.legacy:legacy-support-core-utils:1.0.0@aar,androidx.viewpager:viewpager:1.0.0@aar,androidx.loader:loader:1.0.0@aar,androidx.activity:activity:1.0.0@aar,androidx.customview:customview:1.0.0@aar,androidx.core:core-ktx:1.9.0@aar,androidx.core:core:1.9.0@aar,androidx.core:core:1.9.0@aar,androidx.localbroadcastmanager:localbroadcastmanager:1.1.0@aar,androidx.localbroadcastmanager:localbroadcastmanager:1.1.0@aar,androidx.lifecycle:lifecycle-common-java8:2.2.0@jar,androidx.tracing:tracing:1.0.0@aar,androidx.lifecycle:lifecycle-runtime:2.3.1@aar,androidx.lifecycle:lifecycle-runtime:2.3.1@aar,androidx.versionedparcelable:versionedparcelable:1.1.1@aar,androidx.collection:collection:1.1.0@jar,com.google.firebase:firebase-datatransport:18.1.7@aar,com.google.android.datatransport:transport-backend-cct:3.1.8@aar,com.google.android.datatransport:transport-runtime:3.1.8@aar,com.google.firebase:firebase-encoders-proto:16.0.0@jar,com.google.android.datatransport:transport-api:3.0.0@aar,com.google.firebase:firebase-encoders-json:18.0.0@aar,com.google.firebase:firebase-encoders:17.0.0@jar,com.google.firebase:firebase-components:17.1.5@aar,androidx.concurrent:concurrent-futures:1.1.0@jar,androidx.savedstate:savedstate:1.0.0@aar,androidx.lifecycle:lifecycle-livedata:2.0.0@aar,androidx.lifecycle:lifecycle-livedata-core:2.0.0@aar,androidx.lifecycle:lifecycle-common:2.3.1@jar,androidx.arch.core:core-runtime:2.1.0@aar,androidx.arch.core:core-common:2.1.0@jar,androidx.documentfile:documentfile:1.0.0@aar,androidx.print:print:1.0.0@aar,androidx.lifecycle:lifecycle-viewmodel:2.1.0@aar,com.google.code.gson:gson:2.8.9@jar,androidx.annotation:annotation-jvm:1.7.0@jar,androidx.annotation:annotation-experimental:1.3.0@aar,org.jetbrains.kotlin:kotlin-stdlib:1.8.21@jar,org.jetbrains.kotlin:kotlin-stdlib-common:1.8.21@jar,org.jetbrains:annotations:23.0.0@jar,com.google.guava:guava:31.1-android@jar,com.google.errorprone:error_prone_annotations:2.11.0@jar,com.google.firebase:firebase-annotations:16.2.0@jar,javax.inject:javax.inject:1@jar,com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava@jar,com.google.guava:failureaccess:1.0.1@jar,com.google.code.findbugs:jsr305:3.0.2@jar,org.checkerframework:checker-qual:3.12.0@jar,com.google.j2objc:j2objc-annotations:1.3@jar">
     <dependency
         name="__local_aars__:D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\app\intermediates\flutter\release\libs.jar:unspecified@jar"
         simpleName="__local_aars__:D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\app\intermediates\flutter\release\libs.jar"/>
     <dependency
         name="D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:shared_preferences_android::release"
         simpleName="io.flutter.plugins.sharedpreferences:shared_preferences_android"/>
+    <dependency
+        name="D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:firebase_analytics::release"
+        simpleName="io.flutter.plugins.firebase.analytics:firebase_analytics"/>
     <dependency
         name="D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:firebase_messaging::release"
         simpleName="io.flutter.plugins.firebasemessaging:firebase_messaging"/>
@@ -152,6 +161,15 @@
         name="D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:flutter_local_notifications::release"
         simpleName="com.dexterous.flutterlocalnotifications:flutter_local_notifications"/>
     <dependency
+        name="D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android@@:google_api_availability_android::release"
+        simpleName="com.baseflow.googleapiavailability:google_api_availability_android"/>
+    <dependency
+        name="com.google.firebase:firebase-analytics:21.5.0@aar"
+        simpleName="com.google.firebase:firebase-analytics"/>
+    <dependency
+        name="com.google.android.gms:play-services-measurement-api:21.5.0@aar"
+        simpleName="com.google.android.gms:play-services-measurement-api"/>
+    <dependency
         name="com.google.firebase:firebase-messaging:23.3.1@aar"
         simpleName="com.google.firebase:firebase-messaging"/>
     <dependency
@@ -164,31 +182,46 @@
         name="com.google.firebase:firebase-common-ktx:20.4.2@aar"
         simpleName="com.google.firebase:firebase-common-ktx"/>
     <dependency
-        name="com.google.firebase:firebase-common:20.4.2@aar"
-        simpleName="com.google.firebase:firebase-common"/>
-    <dependency
         name="io.flutter:flutter_embedding_release:1.0.0-cdbeda788a293fa29665dc3fa3d6e63bd221cb0d@jar"
         simpleName="io.flutter:flutter_embedding_release"/>
     <dependency
         name="androidx.window:window-java:1.0.0-beta04@aar"
         simpleName="androidx.window:window-java"/>
     <dependency
+        name="com.google.android.gms:play-services-measurement:21.5.0@aar"
+        simpleName="com.google.android.gms:play-services-measurement"/>
+    <dependency
+        name="com.google.android.gms:play-services-measurement-sdk:21.5.0@aar"
+        simpleName="com.google.android.gms:play-services-measurement-sdk"/>
+    <dependency
+        name="com.google.android.gms:play-services-measurement-impl:21.5.0@aar"
+        simpleName="com.google.android.gms:play-services-measurement-impl"/>
+    <dependency
+        name="androidx.privacysandbox.ads:ads-adservices-java:1.0.0-beta05@aar"
+        simpleName="androidx.privacysandbox.ads:ads-adservices-java"/>
+    <dependency
+        name="androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05@aar"
+        simpleName="androidx.privacysandbox.ads:ads-adservices"/>
+    <dependency
         name="androidx.window:window:1.0.0-beta04@aar"
         simpleName="androidx.window:window"/>
     <dependency
-        name="org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4@jar"
+        name="org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1@jar"
         simpleName="org.jetbrains.kotlinx:kotlinx-coroutines-android"/>
     <dependency
-        name="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4@jar"
-        simpleName="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm"/>
+        name="com.google.firebase:firebase-common:20.4.2@aar"
+        simpleName="com.google.firebase:firebase-common"/>
     <dependency
-        name="org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.4@jar"
+        name="org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.1@jar"
         simpleName="org.jetbrains.kotlinx:kotlinx-coroutines-play-services"/>
     <dependency
-        name="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.10@jar"
+        name="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.1@jar"
+        simpleName="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm"/>
+    <dependency
+        name="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.20@jar"
         simpleName="org.jetbrains.kotlin:kotlin-stdlib-jdk8"/>
     <dependency
-        name="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10@jar"
+        name="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.20@jar"
         simpleName="org.jetbrains.kotlin:kotlin-stdlib-jdk7"/>
     <dependency
         name="io.flutter:armeabi_v7a_release:1.0.0-cdbeda788a293fa29665dc3fa3d6e63bd221cb0d@jar"
@@ -227,6 +260,15 @@
         name="com.google.firebase:firebase-measurement-connector:19.0.0@aar"
         simpleName="com.google.firebase:firebase-measurement-connector"/>
     <dependency
+        name="com.google.android.gms:play-services-ads-identifier:18.0.0@aar"
+        simpleName="com.google.android.gms:play-services-ads-identifier"/>
+    <dependency
+        name="com.google.android.gms:play-services-measurement-sdk-api:21.5.0@aar"
+        simpleName="com.google.android.gms:play-services-measurement-sdk-api"/>
+    <dependency
+        name="com.google.android.gms:play-services-measurement-base:21.5.0@aar"
+        simpleName="com.google.android.gms:play-services-measurement-base"/>
+    <dependency
         name="com.google.android.gms:play-services-basement:18.1.0@aar"
         simpleName="com.google.android.gms:play-services-basement"/>
     <dependency
@@ -247,6 +289,9 @@
     <dependency
         name="androidx.customview:customview:1.0.0@aar"
         simpleName="androidx.customview:customview"/>
+    <dependency
+        name="androidx.core:core-ktx:1.9.0@aar"
+        simpleName="androidx.core:core-ktx"/>
     <dependency
         name="androidx.core:core:1.9.0@aar"
         simpleName="androidx.core:core"/>
@@ -332,16 +377,19 @@
         name="androidx.annotation:annotation-experimental:1.3.0@aar"
         simpleName="androidx.annotation:annotation-experimental"/>
     <dependency
-        name="org.jetbrains.kotlin:kotlin-stdlib:1.7.10@jar"
+        name="org.jetbrains.kotlin:kotlin-stdlib:1.8.21@jar"
         simpleName="org.jetbrains.kotlin:kotlin-stdlib"/>
     <dependency
-        name="org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10@jar"
+        name="org.jetbrains.kotlin:kotlin-stdlib-common:1.8.21@jar"
         simpleName="org.jetbrains.kotlin:kotlin-stdlib-common"/>
     <dependency
-        name="org.jetbrains:annotations:13.0@jar"
+        name="org.jetbrains:annotations:23.0.0@jar"
         simpleName="org.jetbrains:annotations"/>
     <dependency
-        name="com.google.errorprone:error_prone_annotations:2.9.0@jar"
+        name="com.google.guava:guava:31.1-android@jar"
+        simpleName="com.google.guava:guava"/>
+    <dependency
+        name="com.google.errorprone:error_prone_annotations:2.11.0@jar"
         simpleName="com.google.errorprone:error_prone_annotations"/>
     <dependency
         name="com.google.firebase:firebase-annotations:16.2.0@jar"
@@ -350,7 +398,19 @@
         name="javax.inject:javax.inject:1@jar"
         simpleName="javax.inject:javax.inject"/>
     <dependency
-        name="com.google.guava:listenablefuture:1.0@jar"
+        name="com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava@jar"
         simpleName="com.google.guava:listenablefuture"/>
+    <dependency
+        name="com.google.guava:failureaccess:1.0.1@jar"
+        simpleName="com.google.guava:failureaccess"/>
+    <dependency
+        name="com.google.code.findbugs:jsr305:3.0.2@jar"
+        simpleName="com.google.code.findbugs:jsr305"/>
+    <dependency
+        name="org.checkerframework:checker-qual:3.12.0@jar"
+        simpleName="org.checkerframework:checker-qual"/>
+    <dependency
+        name="com.google.j2objc:j2objc-annotations:1.3@jar"
+        simpleName="com.google.j2objc:j2objc-annotations"/>
   </package>
 </dependencies>
