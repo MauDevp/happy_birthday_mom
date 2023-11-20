@@ -1,5 +1,4 @@
 // ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 import 'package:happy_birthday_mom/presentation/screens/pronostic_page.dart';
 import 'package:happy_birthday_mom/presentation/screens/weather_Page.dart';
@@ -7,14 +6,28 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:google_api_availability/google_api_availability.dart';
 
-
+Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
+  await Firebase.initializeApp();
+  print('Un mensaje en segundo plano acaba de llegar: ${message.messageId}');
+}
 
 void main() async {
+
   WidgetsFlutterBinding.ensureInitialized();
+
+  FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
+
+  GoogleApiAvailability apiAvailability = GoogleApiAvailability.instance;
+  await apiAvailability.makeGooglePlayServicesAvailable();
+
   await Firebase.initializeApp();
   FirebaseMessaging messaging = FirebaseMessaging.instance;
+  String? token = await messaging.getToken();
+  print('Token de registro de FCM: $token');
   intl.Intl.defaultLocale = 'es_ES';
 
   FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
@@ -24,8 +37,6 @@ void main() async {
   'High Importance Notifications', // title
   importance: Importance.high,
 );
-
-  
 
   await flutterLocalNotificationsPlugin
     .resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>()

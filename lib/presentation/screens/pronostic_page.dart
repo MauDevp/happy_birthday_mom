@@ -54,9 +54,9 @@ String getWeatherAnimation(String? mainCondition, DateTime time){
 
   switch(mainCondition.toLowerCase()){
     case 'clouds':
-      return isDayTime ? 'assets/day/clouds.json' : 'assets/night/cloud.json';
+      return isDayTime ? 'assets/day/cloud.json' : 'assets/night/cloud.json';
     case 'mist':
-      return isDayTime ? 'assets/day/clouds.json' : 'assets/night/cloud.json';
+      return isDayTime ? 'assets/day/cloud.json' : 'assets/night/cloud.json';
     case 'smoke':
       return isDayTime ? 'assets/day/sunny.json' : 'assets/night/moon.json';
     case 'haze':

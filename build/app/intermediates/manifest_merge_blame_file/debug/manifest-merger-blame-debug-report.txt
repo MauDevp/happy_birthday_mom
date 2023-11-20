@@ -21,313 +21,384 @@
 17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 17-->D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android\app\src\main\AndroidManifest.xml:3:5-80
 17-->D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\android\app\src\main\AndroidManifest.xml:3:22-78
-18    <uses-permission android:name="android.permission.WAKE_LOCK" />
-18-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-68
-18-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-65
-19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
-19-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-79
-19-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-76
-20    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[:firebase_analytics] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
+18-->[:firebase_analytics] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-76
+19    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Permissions options for the `notification` group -->
+19-->[:firebase_analytics] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-68
+19-->[:firebase_analytics] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-65
+20    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 20-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-77
 20-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:22-74
-21    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-21-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\824d9827bcbbf2ab133fdd9882894bf1\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:26:5-82
-21-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\824d9827bcbbf2ab133fdd9882894bf1\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:26:22-79
-22
-23    <permission
-23-->[androidx.core:core:1.9.0] C:\Users\Maui\.gradle\caches\transforms-3\c2aff38445ebad8ddeaa989ecf50f56e\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
-24        android:name="com.example.happy_birthday_mom.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-24-->[androidx.core:core:1.9.0] C:\Users\Maui\.gradle\caches\transforms-3\c2aff38445ebad8ddeaa989ecf50f56e\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
-25        android:protectionLevel="signature" />
-25-->[androidx.core:core:1.9.0] C:\Users\Maui\.gradle\caches\transforms-3\c2aff38445ebad8ddeaa989ecf50f56e\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
-26
-27    <uses-permission android:name="com.example.happy_birthday_mom.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-27-->[androidx.core:core:1.9.0] C:\Users\Maui\.gradle\caches\transforms-3\c2aff38445ebad8ddeaa989ecf50f56e\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-27-->[androidx.core:core:1.9.0] C:\Users\Maui\.gradle\caches\transforms-3\c2aff38445ebad8ddeaa989ecf50f56e\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
-28
-29    <application
-30        android:name="android.app.Application"
-31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-31-->[androidx.core:core:1.9.0] C:\Users\Maui\.gradle\caches\transforms-3\c2aff38445ebad8ddeaa989ecf50f56e\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
-32        android:debuggable="true"
-33        android:icon="@mipmap/ic_launcher"
-34        android:label="happy_birthday_mom" >
-35        <activity
-36            android:name="com.example.happy_birthday_mom.MainActivity"
-37            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-38            android:exported="true"
-39            android:hardwareAccelerated="true"
-40            android:launchMode="singleTop"
-41            android:theme="@style/LaunchTheme"
-42            android:windowSoftInputMode="adjustResize" >
-43
-44            <!--
-45                 Specifies an Android theme to apply to this Activity as soon as
-46                 the Android process has started. This theme is visible to the user
-47                 while the Flutter UI initializes. After that, this theme continues
-48                 to determine the Window background behind the Flutter UI.
-49            -->
-50            <meta-data
-51                android:name="io.flutter.embedding.android.NormalTheme"
-52                android:resource="@style/NormalTheme" />
-53
-54            <intent-filter>
-55                <action android:name="android.intent.action.MAIN" />
-56
-57                <category android:name="android.intent.category.LAUNCHER" />
-58            </intent-filter>
-59        </activity>
-60        <!--
-61             Don't delete the meta-data below.
-62             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-63        -->
-64        <meta-data
-65            android:name="flutterEmbedding"
-66            android:value="2" />
-67
-68        <service
-68-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-19:72
-69            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
-69-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-107
-70            android:exported="false"
-70-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
-71            android:permission="android.permission.BIND_JOB_SERVICE" />
-71-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-69
-72        <service
-72-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-26:19
-73            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
-73-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-97
-74            android:exported="false" >
-74-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-37
-75            <intent-filter>
-75-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
-76                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-76-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
-76-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
-77            </intent-filter>
-78        </service>
-79
-80        <receiver
-80-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-35:20
-81            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
-81-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-98
-82            android:exported="true"
-82-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-36
-83            android:permission="com.google.android.c2dm.permission.SEND" >
-83-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-73
-84            <intent-filter>
-84-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
-85                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-85-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
-85-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
-86            </intent-filter>
-87        </receiver>
-88
-89        <service
-89-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:9-41:19
-90            android:name="com.google.firebase.components.ComponentDiscoveryService"
-90-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:18-89
-91            android:directBootAware="true"
-91-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\e7d9dc77e05549f012842a2b34d6bb45\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:32:13-43
-92            android:exported="false" >
-92-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\824d9827bcbbf2ab133fdd9882894bf1\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:56:13-37
-93            <meta-data
-93-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-40:85
-94                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
-94-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:39:17-128
-95                android:value="com.google.firebase.components.ComponentRegistrar" />
-95-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:40:17-82
-96            <meta-data
-96-->[:firebase_core] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
-97                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-97-->[:firebase_core] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
-98                android:value="com.google.firebase.components.ComponentRegistrar" />
-98-->[:firebase_core] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
-99            <meta-data
-99-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\824d9827bcbbf2ab133fdd9882894bf1\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:57:13-59:85
-100                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
-100-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\824d9827bcbbf2ab133fdd9882894bf1\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:58:17-122
-101                android:value="com.google.firebase.components.ComponentRegistrar" />
-101-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\824d9827bcbbf2ab133fdd9882894bf1\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:59:17-82
-102            <meta-data
-102-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\824d9827bcbbf2ab133fdd9882894bf1\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:60:13-62:85
-103                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-103-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\824d9827bcbbf2ab133fdd9882894bf1\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:61:17-119
-104                android:value="com.google.firebase.components.ComponentRegistrar" />
-104-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\824d9827bcbbf2ab133fdd9882894bf1\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:62:17-82
-105            <meta-data
-105-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Maui\.gradle\caches\transforms-3\59763aa1d6ae3e2f09628a4724cc5003\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
-106                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-106-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Maui\.gradle\caches\transforms-3\59763aa1d6ae3e2f09628a4724cc5003\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
-107                android:value="com.google.firebase.components.ComponentRegistrar" />
-107-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Maui\.gradle\caches\transforms-3\59763aa1d6ae3e2f09628a4724cc5003\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
-108            <meta-data
-108-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Maui\.gradle\caches\transforms-3\024ddff1a0345ac914ee9673a85f6efa\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:15:13-17:85
-109                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
-109-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Maui\.gradle\caches\transforms-3\024ddff1a0345ac914ee9673a85f6efa\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:16:17-130
-110                android:value="com.google.firebase.components.ComponentRegistrar" />
-110-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Maui\.gradle\caches\transforms-3\024ddff1a0345ac914ee9673a85f6efa\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:17:17-82
-111            <meta-data
-111-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Maui\.gradle\caches\transforms-3\024ddff1a0345ac914ee9673a85f6efa\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:18:13-20:85
-112                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-112-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Maui\.gradle\caches\transforms-3\024ddff1a0345ac914ee9673a85f6efa\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:19:17-127
-113                android:value="com.google.firebase.components.ComponentRegistrar" />
-113-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Maui\.gradle\caches\transforms-3\024ddff1a0345ac914ee9673a85f6efa\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:20:17-82
-114            <meta-data
-114-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\3716f3774b9df13860dc280c4dfee53a\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
-115                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-115-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\3716f3774b9df13860dc280c4dfee53a\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
-116                android:value="com.google.firebase.components.ComponentRegistrar" />
-116-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\3716f3774b9df13860dc280c4dfee53a\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
-117            <meta-data
-117-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\e7d9dc77e05549f012842a2b34d6bb45\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
-118                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-118-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\e7d9dc77e05549f012842a2b34d6bb45\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:36:17-109
-119                android:value="com.google.firebase.components.ComponentRegistrar" />
-119-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\e7d9dc77e05549f012842a2b34d6bb45\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:37:17-82
-120            <meta-data
-120-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Maui\.gradle\caches\transforms-3\1b4ad2325bb4a983f364027acea0daeb\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
-121                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-121-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Maui\.gradle\caches\transforms-3\1b4ad2325bb4a983f364027acea0daeb\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
-122                android:value="com.google.firebase.components.ComponentRegistrar" />
-122-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Maui\.gradle\caches\transforms-3\1b4ad2325bb4a983f364027acea0daeb\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
-123        </service>
-124
-125        <provider
-125-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:9-47:38
-126            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
-126-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-102
-127            android:authorities="com.example.happy_birthday_mom.flutterfirebasemessaginginitprovider"
-127-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-88
-128            android:exported="false"
-128-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-37
-129            android:initOrder="99" />
-129-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-35
-130
-131        <service
-131-->[:geolocator_android] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:56
-132            android:name="com.baseflow.geolocator.GeolocatorLocationService"
-132-->[:geolocator_android] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-77
-133            android:enabled="true"
-133-->[:geolocator_android] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-35
-134            android:exported="false"
-134-->[:geolocator_android] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
-135            android:foregroundServiceType="location" />
-135-->[:geolocator_android] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-53
-136
-137        <receiver
-137-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\824d9827bcbbf2ab133fdd9882894bf1\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:29:9-40:20
-138            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-138-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\824d9827bcbbf2ab133fdd9882894bf1\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:30:13-78
-139            android:exported="true"
-139-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\824d9827bcbbf2ab133fdd9882894bf1\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:31:13-36
-140            android:permission="com.google.android.c2dm.permission.SEND" >
-140-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\824d9827bcbbf2ab133fdd9882894bf1\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:32:13-73
-141            <intent-filter>
-141-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
-142                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-142-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
-142-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
-143            </intent-filter>
-144
-145            <meta-data
-145-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\824d9827bcbbf2ab133fdd9882894bf1\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:37:13-39:40
-146                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
-146-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\824d9827bcbbf2ab133fdd9882894bf1\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:38:17-92
-147                android:value="true" />
-147-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\824d9827bcbbf2ab133fdd9882894bf1\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:39:17-37
-148        </receiver>
-149        <!--
-150             FirebaseMessagingService performs security checks at runtime,
-151             but set to not exported to explicitly avoid allowing another app to call it.
-152        -->
-153        <service
-153-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\824d9827bcbbf2ab133fdd9882894bf1\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:46:9-53:19
-154            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-154-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\824d9827bcbbf2ab133fdd9882894bf1\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:47:13-82
-155            android:directBootAware="true"
-155-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\824d9827bcbbf2ab133fdd9882894bf1\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:48:13-43
-156            android:exported="false" >
-156-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\824d9827bcbbf2ab133fdd9882894bf1\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:49:13-37
-157            <intent-filter android:priority="-500" >
-157-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
-158                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-158-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
-158-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
-159            </intent-filter>
-160        </service>
+21    <uses-permission android:name="android.permission.VIBRATE" />
+21-->[:flutter_local_notifications] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-66
+21-->[:flutter_local_notifications] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-63
+22    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+22-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\9410f9d71a17df04fcb4572b44bd548c\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:25:5-79
+22-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\9410f9d71a17df04fcb4572b44bd548c\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:25:22-76
+23    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+23-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\9410f9d71a17df04fcb4572b44bd548c\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:26:5-88
+23-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\9410f9d71a17df04fcb4572b44bd548c\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:26:22-85
+24    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+24-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\9410f9d71a17df04fcb4572b44bd548c\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:27:5-82
+24-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\9410f9d71a17df04fcb4572b44bd548c\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:27:22-79
+25    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+25-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\2e7a2ba6b780e87cb11095c57adf51e6\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:26:5-82
+25-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\2e7a2ba6b780e87cb11095c57adf51e6\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:26:22-79
+26    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+26-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\0427c3da52ef93b7135716c74d9b7716\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:26:5-110
+26-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\0427c3da52ef93b7135716c74d9b7716\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:26:22-107
+27
+28    <permission
+28-->[androidx.core:core:1.9.0] C:\Users\Maui\.gradle\caches\transforms-3\9db9fbf2cbbe5ae224d9399ca94dfcb5\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+29        android:name="com.example.happy_birthday_mom.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+29-->[androidx.core:core:1.9.0] C:\Users\Maui\.gradle\caches\transforms-3\9db9fbf2cbbe5ae224d9399ca94dfcb5\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+30        android:protectionLevel="signature" />
+30-->[androidx.core:core:1.9.0] C:\Users\Maui\.gradle\caches\transforms-3\9db9fbf2cbbe5ae224d9399ca94dfcb5\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+31
+32    <uses-permission android:name="com.example.happy_birthday_mom.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+32-->[androidx.core:core:1.9.0] C:\Users\Maui\.gradle\caches\transforms-3\9db9fbf2cbbe5ae224d9399ca94dfcb5\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+32-->[androidx.core:core:1.9.0] C:\Users\Maui\.gradle\caches\transforms-3\9db9fbf2cbbe5ae224d9399ca94dfcb5\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+33
+34    <application
+35        android:name="android.app.Application"
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.9.0] C:\Users\Maui\.gradle\caches\transforms-3\9db9fbf2cbbe5ae224d9399ca94dfcb5\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+37        android:debuggable="true"
+38        android:icon="@mipmap/ic_launcher"
+39        android:label="happy_birthday_mom" >
+40        <activity
+41            android:name="com.example.happy_birthday_mom.MainActivity"
+42            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+43            android:exported="true"
+44            android:hardwareAccelerated="true"
+45            android:launchMode="singleTop"
+46            android:theme="@style/LaunchTheme"
+47            android:windowSoftInputMode="adjustResize" >
+48
+49            <!--
+50                 Specifies an Android theme to apply to this Activity as soon as
+51                 the Android process has started. This theme is visible to the user
+52                 while the Flutter UI initializes. After that, this theme continues
+53                 to determine the Window background behind the Flutter UI.
+54            -->
+55            <meta-data
+56                android:name="io.flutter.embedding.android.NormalTheme"
+57                android:resource="@style/NormalTheme" />
+58
+59            <intent-filter>
+60                <action android:name="android.intent.action.MAIN" />
+61
+62                <category android:name="android.intent.category.LAUNCHER" />
+63            </intent-filter>
+64        </activity>
+65        <!--
+66             Don't delete the meta-data below.
+67             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+68        -->
+69        <meta-data
+70            android:name="flutterEmbedding"
+71            android:value="2" />
+72        <meta-data
+73            android:name="com.google.firebase.messaging.default_notification_channel_id"
+74            android:value="high_importance_channel" />
+75
+76        <service
+76-->[:firebase_analytics] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-18:19
+77            android:name="com.google.firebase.components.ComponentDiscoveryService"
+77-->[:firebase_analytics] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:14:18-89
+78            android:directBootAware="true"
+78-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\c5dc4189ad24574cf37af0c0c4872833\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:32:13-43
+79            android:exported="false" >
+79-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\9410f9d71a17df04fcb4572b44bd548c\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:36:13-37
+80            <meta-data
+80-->[:firebase_analytics] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:85
+81                android:name="com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar"
+81-->[:firebase_analytics] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-128
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[:firebase_analytics] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-82
+83            <meta-data
+83-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-40:85
+84                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+84-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:39:17-128
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:40:17-82
+86            <meta-data
+86-->[:firebase_core] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+87                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+87-->[:firebase_core] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[:firebase_core] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+89            <meta-data
+89-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\9410f9d71a17df04fcb4572b44bd548c\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:37:13-39:85
+90                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+90-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\9410f9d71a17df04fcb4572b44bd548c\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:38:17-139
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\9410f9d71a17df04fcb4572b44bd548c\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:39:17-82
+92            <meta-data
+92-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\2e7a2ba6b780e87cb11095c57adf51e6\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:57:13-59:85
+93                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+93-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\2e7a2ba6b780e87cb11095c57adf51e6\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:58:17-122
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\2e7a2ba6b780e87cb11095c57adf51e6\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:59:17-82
+95            <meta-data
+95-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\2e7a2ba6b780e87cb11095c57adf51e6\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:60:13-62:85
+96                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+96-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\2e7a2ba6b780e87cb11095c57adf51e6\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:61:17-119
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\2e7a2ba6b780e87cb11095c57adf51e6\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:62:17-82
+98            <meta-data
+98-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Maui\.gradle\caches\transforms-3\948584627474adf85143bbe7a52c8af2\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+99                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+99-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Maui\.gradle\caches\transforms-3\948584627474adf85143bbe7a52c8af2\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Maui\.gradle\caches\transforms-3\948584627474adf85143bbe7a52c8af2\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+101            <meta-data
+101-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Maui\.gradle\caches\transforms-3\98e72787164def0e6789470b5978245b\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:15:13-17:85
+102                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+102-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Maui\.gradle\caches\transforms-3\98e72787164def0e6789470b5978245b\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:16:17-130
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Maui\.gradle\caches\transforms-3\98e72787164def0e6789470b5978245b\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:17:17-82
+104            <meta-data
+104-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Maui\.gradle\caches\transforms-3\98e72787164def0e6789470b5978245b\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:18:13-20:85
+105                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+105-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Maui\.gradle\caches\transforms-3\98e72787164def0e6789470b5978245b\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:19:17-127
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Maui\.gradle\caches\transforms-3\98e72787164def0e6789470b5978245b\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:20:17-82
+107            <meta-data
+107-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\ac179a107d4ddb79c6937fdb90a05942\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
+108                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+108-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\ac179a107d4ddb79c6937fdb90a05942\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\ac179a107d4ddb79c6937fdb90a05942\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
+110            <meta-data
+110-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\c5dc4189ad24574cf37af0c0c4872833\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
+111                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+111-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\c5dc4189ad24574cf37af0c0c4872833\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:36:17-109
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\c5dc4189ad24574cf37af0c0c4872833\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:37:17-82
+113            <meta-data
+113-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Maui\.gradle\caches\transforms-3\d6859569cb462b1e005ed24f2ef495d2\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+114                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+114-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Maui\.gradle\caches\transforms-3\d6859569cb462b1e005ed24f2ef495d2\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Maui\.gradle\caches\transforms-3\d6859569cb462b1e005ed24f2ef495d2\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+116        </service>
+117        <service
+117-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-19:72
+118            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+118-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-107
+119            android:exported="false"
+119-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
+120            android:permission="android.permission.BIND_JOB_SERVICE" />
+120-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-69
+121        <service
+121-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-26:19
+122            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+122-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-97
+123            android:exported="false" >
+123-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-37
+124            <intent-filter>
+124-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+125                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+125-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+125-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+126            </intent-filter>
+127        </service>
+128
+129        <receiver
+129-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-35:20
+130            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+130-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-98
+131            android:exported="true"
+131-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-36
+132            android:permission="com.google.android.c2dm.permission.SEND" >
+132-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-73
+133            <intent-filter>
+133-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+134                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+134-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+134-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+135            </intent-filter>
+136        </receiver>
+137
+138        <provider
+138-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:9-47:38
+139            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+139-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-102
+140            android:authorities="com.example.happy_birthday_mom.flutterfirebasemessaginginitprovider"
+140-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-88
+141            android:exported="false"
+141-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-37
+142            android:initOrder="99" />
+142-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-35
+143
+144        <service
+144-->[:geolocator_android] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:56
+145            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+145-->[:geolocator_android] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-77
+146            android:enabled="true"
+146-->[:geolocator_android] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-35
+147            android:exported="false"
+147-->[:geolocator_android] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+148            android:foregroundServiceType="location" />
+148-->[:geolocator_android] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-53
+149
+150        <property
+150-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\9410f9d71a17df04fcb4572b44bd548c\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:30:9-32:61
+151            android:name="android.adservices.AD_SERVICES_CONFIG"
+151-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\9410f9d71a17df04fcb4572b44bd548c\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:31:13-65
+152            android:resource="@xml/ga_ad_services_config" />
+152-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\9410f9d71a17df04fcb4572b44bd548c\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:32:13-58
+153
+154        <receiver
+154-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\2e7a2ba6b780e87cb11095c57adf51e6\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:29:9-40:20
+155            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+155-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\2e7a2ba6b780e87cb11095c57adf51e6\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:30:13-78
+156            android:exported="true"
+156-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\2e7a2ba6b780e87cb11095c57adf51e6\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:31:13-36
+157            android:permission="com.google.android.c2dm.permission.SEND" >
+157-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\2e7a2ba6b780e87cb11095c57adf51e6\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:32:13-73
+158            <intent-filter>
+158-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+159                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+159-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+159-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+160            </intent-filter>
 161
-162        <provider
-162-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\e7d9dc77e05549f012842a2b34d6bb45\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
-163            android:name="com.google.firebase.provider.FirebaseInitProvider"
-163-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\e7d9dc77e05549f012842a2b34d6bb45\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:24:13-77
-164            android:authorities="com.example.happy_birthday_mom.firebaseinitprovider"
-164-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\e7d9dc77e05549f012842a2b34d6bb45\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:25:13-72
-165            android:directBootAware="true"
-165-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\e7d9dc77e05549f012842a2b34d6bb45\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:26:13-43
-166            android:exported="false"
-166-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\e7d9dc77e05549f012842a2b34d6bb45\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:27:13-37
-167            android:initOrder="100" />
-167-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\e7d9dc77e05549f012842a2b34d6bb45\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:28:13-36
-168
-169        <uses-library
-169-->[androidx.window:window:1.0.0-beta04] C:\Users\Maui\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
-170            android:name="androidx.window.extensions"
-170-->[androidx.window:window:1.0.0-beta04] C:\Users\Maui\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
-171            android:required="false" />
-171-->[androidx.window:window:1.0.0-beta04] C:\Users\Maui\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
-172        <uses-library
-172-->[androidx.window:window:1.0.0-beta04] C:\Users\Maui\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
-173            android:name="androidx.window.sidecar"
-173-->[androidx.window:window:1.0.0-beta04] C:\Users\Maui\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
-174            android:required="false" />
-174-->[androidx.window:window:1.0.0-beta04] C:\Users\Maui\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
-175
-176        <activity
-176-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Maui\.gradle\caches\transforms-3\781e5567158e59d38ee2b89930f9808b\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
-177            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-177-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Maui\.gradle\caches\transforms-3\781e5567158e59d38ee2b89930f9808b\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
-178            android:exported="false"
-178-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Maui\.gradle\caches\transforms-3\781e5567158e59d38ee2b89930f9808b\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
-179            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-179-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Maui\.gradle\caches\transforms-3\781e5567158e59d38ee2b89930f9808b\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
-180
-181        <meta-data
-181-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Maui\.gradle\caches\transforms-3\58aa1384bde170d075503b845cfcf44c\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
-182            android:name="com.google.android.gms.version"
-182-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Maui\.gradle\caches\transforms-3\58aa1384bde170d075503b845cfcf44c\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
-183            android:value="@integer/google_play_services_version" />
-183-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Maui\.gradle\caches\transforms-3\58aa1384bde170d075503b845cfcf44c\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+162            <meta-data
+162-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\2e7a2ba6b780e87cb11095c57adf51e6\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:37:13-39:40
+163                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+163-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\2e7a2ba6b780e87cb11095c57adf51e6\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:38:17-92
+164                android:value="true" />
+164-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\2e7a2ba6b780e87cb11095c57adf51e6\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:39:17-37
+165        </receiver>
+166        <!--
+167             FirebaseMessagingService performs security checks at runtime,
+168             but set to not exported to explicitly avoid allowing another app to call it.
+169        -->
+170        <service
+170-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\2e7a2ba6b780e87cb11095c57adf51e6\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:46:9-53:19
+171            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+171-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\2e7a2ba6b780e87cb11095c57adf51e6\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:47:13-82
+172            android:directBootAware="true"
+172-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\2e7a2ba6b780e87cb11095c57adf51e6\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:48:13-43
+173            android:exported="false" >
+173-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\Maui\.gradle\caches\transforms-3\2e7a2ba6b780e87cb11095c57adf51e6\transformed\jetified-firebase-messaging-23.3.1\AndroidManifest.xml:49:13-37
+174            <intent-filter android:priority="-500" >
+174-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+175                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+175-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+175-->[:firebase_messaging] D:\Apps_dedicadas\mom_happy_birthday_41\happy_birthday_mom\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+176            </intent-filter>
+177        </service>
+178
+179        <receiver
+179-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\0427c3da52ef93b7135716c74d9b7716\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:29:9-33:20
+180            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+180-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\0427c3da52ef93b7135716c74d9b7716\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:30:13-85
+181            android:enabled="true"
+181-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\0427c3da52ef93b7135716c74d9b7716\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:31:13-35
+182            android:exported="false" >
+182-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\0427c3da52ef93b7135716c74d9b7716\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:32:13-37
+183        </receiver>
 184
 185        <service
-185-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\a5f1ff8179a51cad08637ffc69855391\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
-186            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-186-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\a5f1ff8179a51cad08637ffc69855391\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
-187            android:exported="false" >
-187-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\a5f1ff8179a51cad08637ffc69855391\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
-188            <meta-data
-188-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\a5f1ff8179a51cad08637ffc69855391\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
-189                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-189-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\a5f1ff8179a51cad08637ffc69855391\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
-190                android:value="cct" />
-190-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\a5f1ff8179a51cad08637ffc69855391\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
-191        </service>
-192        <service
-192-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\6e5a1cbd6e3d2c42bcc7c2731873333e\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
-193            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-193-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\6e5a1cbd6e3d2c42bcc7c2731873333e\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
-194            android:exported="false"
-194-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\6e5a1cbd6e3d2c42bcc7c2731873333e\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
-195            android:permission="android.permission.BIND_JOB_SERVICE" >
-195-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\6e5a1cbd6e3d2c42bcc7c2731873333e\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
-196        </service>
-197
-198        <receiver
-198-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\6e5a1cbd6e3d2c42bcc7c2731873333e\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
-199            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-199-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\6e5a1cbd6e3d2c42bcc7c2731873333e\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
-200            android:exported="false" />
-200-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\6e5a1cbd6e3d2c42bcc7c2731873333e\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
-201    </application>
-202
-203</manifest>
+185-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\0427c3da52ef93b7135716c74d9b7716\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:35:9-38:40
+186            android:name="com.google.android.gms.measurement.AppMeasurementService"
+186-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\0427c3da52ef93b7135716c74d9b7716\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:36:13-84
+187            android:enabled="true"
+187-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\0427c3da52ef93b7135716c74d9b7716\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:37:13-35
+188            android:exported="false" />
+188-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\0427c3da52ef93b7135716c74d9b7716\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:38:13-37
+189        <service
+189-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\0427c3da52ef93b7135716c74d9b7716\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:39:9-43:72
+190            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+190-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\0427c3da52ef93b7135716c74d9b7716\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:40:13-87
+191            android:enabled="true"
+191-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\0427c3da52ef93b7135716c74d9b7716\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:41:13-35
+192            android:exported="false"
+192-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\0427c3da52ef93b7135716c74d9b7716\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:42:13-37
+193            android:permission="android.permission.BIND_JOB_SERVICE" />
+193-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Maui\.gradle\caches\transforms-3\0427c3da52ef93b7135716c74d9b7716\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:43:13-69
+194
+195        <uses-library
+195-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\Maui\.gradle\caches\transforms-3\574e9cc89c0c318e87562820aa4f0c9a\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
+196            android:name="android.ext.adservices"
+196-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\Maui\.gradle\caches\transforms-3\574e9cc89c0c318e87562820aa4f0c9a\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
+197            android:required="false" />
+197-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\Maui\.gradle\caches\transforms-3\574e9cc89c0c318e87562820aa4f0c9a\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
+198        <uses-library
+198-->[androidx.window:window:1.0.0-beta04] C:\Users\Maui\.gradle\caches\transforms-3\3547045148f823ae82ba5f00da62432e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+199            android:name="androidx.window.extensions"
+199-->[androidx.window:window:1.0.0-beta04] C:\Users\Maui\.gradle\caches\transforms-3\3547045148f823ae82ba5f00da62432e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+200            android:required="false" />
+200-->[androidx.window:window:1.0.0-beta04] C:\Users\Maui\.gradle\caches\transforms-3\3547045148f823ae82ba5f00da62432e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+201        <uses-library
+201-->[androidx.window:window:1.0.0-beta04] C:\Users\Maui\.gradle\caches\transforms-3\3547045148f823ae82ba5f00da62432e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+202            android:name="androidx.window.sidecar"
+202-->[androidx.window:window:1.0.0-beta04] C:\Users\Maui\.gradle\caches\transforms-3\3547045148f823ae82ba5f00da62432e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+203            android:required="false" />
+203-->[androidx.window:window:1.0.0-beta04] C:\Users\Maui\.gradle\caches\transforms-3\3547045148f823ae82ba5f00da62432e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+204
+205        <provider
+205-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\c5dc4189ad24574cf37af0c0c4872833\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
+206            android:name="com.google.firebase.provider.FirebaseInitProvider"
+206-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\c5dc4189ad24574cf37af0c0c4872833\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:24:13-77
+207            android:authorities="com.example.happy_birthday_mom.firebaseinitprovider"
+207-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\c5dc4189ad24574cf37af0c0c4872833\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:25:13-72
+208            android:directBootAware="true"
+208-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\c5dc4189ad24574cf37af0c0c4872833\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:26:13-43
+209            android:exported="false"
+209-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\c5dc4189ad24574cf37af0c0c4872833\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:27:13-37
+210            android:initOrder="100" />
+210-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Maui\.gradle\caches\transforms-3\c5dc4189ad24574cf37af0c0c4872833\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:28:13-36
+211
+212        <activity
+212-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Maui\.gradle\caches\transforms-3\fb05ebe4ba377fe1bb8a798cac626853\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+213            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+213-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Maui\.gradle\caches\transforms-3\fb05ebe4ba377fe1bb8a798cac626853\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+214            android:exported="false"
+214-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Maui\.gradle\caches\transforms-3\fb05ebe4ba377fe1bb8a798cac626853\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+215            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+215-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Maui\.gradle\caches\transforms-3\fb05ebe4ba377fe1bb8a798cac626853\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+216
+217        <meta-data
+217-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Maui\.gradle\caches\transforms-3\45b55c87021c9ab508d82f4ad609d95c\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+218            android:name="com.google.android.gms.version"
+218-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Maui\.gradle\caches\transforms-3\45b55c87021c9ab508d82f4ad609d95c\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+219            android:value="@integer/google_play_services_version" />
+219-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Maui\.gradle\caches\transforms-3\45b55c87021c9ab508d82f4ad609d95c\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+220
+221        <service
+221-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\c6d21575a5e99f9afb414ce9a8447da8\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+222            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+222-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\c6d21575a5e99f9afb414ce9a8447da8\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+223            android:exported="false" >
+223-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\c6d21575a5e99f9afb414ce9a8447da8\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+224            <meta-data
+224-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\c6d21575a5e99f9afb414ce9a8447da8\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+225                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+225-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\c6d21575a5e99f9afb414ce9a8447da8\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+226                android:value="cct" />
+226-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\c6d21575a5e99f9afb414ce9a8447da8\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+227        </service>
+228        <service
+228-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\8fd52d9a88b0221213966aa57c616fe4\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+229            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+229-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\8fd52d9a88b0221213966aa57c616fe4\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+230            android:exported="false"
+230-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\8fd52d9a88b0221213966aa57c616fe4\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+231            android:permission="android.permission.BIND_JOB_SERVICE" >
+231-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\8fd52d9a88b0221213966aa57c616fe4\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+232        </service>
+233
+234        <receiver
+234-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\8fd52d9a88b0221213966aa57c616fe4\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+235            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+235-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\8fd52d9a88b0221213966aa57c616fe4\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+236            android:exported="false" />
+236-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Maui\.gradle\caches\transforms-3\8fd52d9a88b0221213966aa57c616fe4\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+237    </application>
+238
+239</manifest>

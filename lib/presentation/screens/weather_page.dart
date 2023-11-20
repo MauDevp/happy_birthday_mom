@@ -3,6 +3,7 @@ import 'package:happy_birthday_mom/presentation/models/weather_models.dart';
 import 'package:happy_birthday_mom/presentation/screens/pronostic_page.dart';
 import 'package:happy_birthday_mom/presentation/services/weather_service.dart';
 import 'package:lottie/lottie.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 
 class WeatherPage extends StatefulWidget {
   const WeatherPage({super.key});
@@ -48,9 +49,9 @@ String getWeatherAnimation(String? mainCondition){
 
   switch(mainCondition.toLowerCase()){
     case 'clouds':
-      return isDayTime ? 'assets/day/clouds.json' : 'assets/night/cloud.json';
+      return isDayTime ? 'assets/day/cloud.json' : 'assets/night/cloud.json';
     case 'mist':
-      return isDayTime ? 'assets/day/clouds.json' : 'assets/night/cloud.json';
+      return isDayTime ? 'assets/day/cloud.json' : 'assets/night/cloud.json';
     case 'smoke':
       return isDayTime ? 'assets/day/sunny.json' : 'assets/night/moon.json';
     case 'haze':
@@ -104,7 +105,7 @@ String getWeatherCondition(String? mainCondition){
   @override
   void initState() {
     super.initState();
-
+    FirebaseMessaging.instance.requestPermission(alert: true, badge: true, sound: true);
     //  fetch weather on startup
     _fetchWeather();
   }
