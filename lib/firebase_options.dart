@@ -17,15 +17,24 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        return ios;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for ios - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -43,39 +52,11 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBhsXGwaVSor0v5McPSXK0V7QhhUQUEUeE',
-    appId: '1:1030988524707:web:909602cf7bd0ed789d2316',
-    messagingSenderId: '1030988524707',
-    projectId: 'happy-birthday-mama-b05ec',
-    authDomain: 'happy-birthday-mama-b05ec.firebaseapp.com',
-    storageBucket: 'happy-birthday-mama-b05ec.appspot.com',
-    measurementId: 'G-ZXQZCKX8YC',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyDmRBEfL8_Uvg9uiE52IQkvHN3RbisbkP0',
     appId: '1:1030988524707:android:eca6636de34aceca9d2316',
     messagingSenderId: '1030988524707',
     projectId: 'happy-birthday-mama-b05ec',
     storageBucket: 'happy-birthday-mama-b05ec.appspot.com',
-  );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyD-VxvUpp5IDkYwZHmwsZYwsdx4_eAiDcQ',
-    appId: '1:1030988524707:ios:803b10b716c481d79d2316',
-    messagingSenderId: '1030988524707',
-    projectId: 'happy-birthday-mama-b05ec',
-    storageBucket: 'happy-birthday-mama-b05ec.appspot.com',
-    iosBundleId: 'com.example.happyBirthdayMom',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyD-VxvUpp5IDkYwZHmwsZYwsdx4_eAiDcQ',
-    appId: '1:1030988524707:ios:abcb1d5f02f267679d2316',
-    messagingSenderId: '1030988524707',
-    projectId: 'happy-birthday-mama-b05ec',
-    storageBucket: 'happy-birthday-mama-b05ec.appspot.com',
-    iosBundleId: 'com.example.happyBirthdayMom.RunnerTests',
   );
 }

@@ -44,6 +44,8 @@ dependencies:
   flutter_localization: ^0.1.14
   firebase_core: ^2.22.0
   flutter_local_notifications: ^16.1.0
+  google_api_availability: ^5.0.0
+  firebase_analytics: ^10.7.0
 
 dev_dependencies:
   flutter_test:
